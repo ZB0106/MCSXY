@@ -8,13 +8,16 @@
 
 import UIKit
 
-public class MCViewController: UIViewController {
+public class MCViewController: UIViewController,ZB_BindingViewModelProtocol {
 
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
 
         self .addSubViews()
         self .makeConstraintsForUI()
+        
+        self .bindingViewmodels()
     }
 
     override public func didReceiveMemoryWarning() {
@@ -30,6 +33,10 @@ extension MCViewController : MCUIProtocol{
     }
     
     public func makeConstraintsForUI() {
+        
+    }
+    
+    public func bindingViewmodels() {
         
     }
 }

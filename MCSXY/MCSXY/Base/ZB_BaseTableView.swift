@@ -62,7 +62,8 @@ extension ZB_BaseTableView:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView .dequeueReusableCell(withIdentifier: "")
+        let tableInfo = self.tableViewInfos?.infos?.last
+        let cell = tableView .dequeueReusableCell(withIdentifier: (tableInfo?.cellIdentifier)!)
         return cell!
     }
     

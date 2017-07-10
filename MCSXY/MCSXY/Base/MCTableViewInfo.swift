@@ -32,7 +32,7 @@ class MCLiveTableViewInfos: MCBaseTableViewInfos {
         super.init()
         let info = MCTableViewInfo.init()
         info.cellIdentifier = "liveCell"
-        info.cellClass = "LiveCellClass"
+        info.cellClass = NSObject.classNameAndSpaceName(className: "MCLiveCell")
         self.infos = [info]
     }
 }

@@ -21,18 +21,11 @@ class MCTableViewController: MCListController {
     }
     
     static var tableViewInfoDict:Dictionary<String, String> {
-    
-        return ["\(MCLiveController.classForCoder())":"\(MCLiveTableViewInfos.classForCoder())"]
+        
+        return [NSObject.classNameAndSpaceName(className: "MCLiveController"):NSObject.classNameAndSpaceName(className: "MCLiveTableViewInfos")]
     }
     
-    func classNameAndSpaceName(className: String?) -> String {
-        if let clsName = Bundle.main.infoDictionary!["CFBundleExecutable"] {
-            return clsName as! String + "." + className!
-        } else {
-            return ""
-        }
-    }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,7 +47,8 @@ extension MCTableViewController{
     override func addSubViews() {
         super.addSubViews()
         
-        let tableViewInfo = MCTableViewController.tableViewInfoDict[NSStringFromClass(type(of: self))];
+        let cls = NSStringFromClass(type(of: self))
+        let tableViewInfo = MCTableViewController.tableViewInfoDict[cls];
         
         self.tableView = ZB_BaseTableView.init(infoClass: tableViewInfo!)
         self.view .addSubview(tableView!)
