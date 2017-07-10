@@ -1,0 +1,14 @@
+platform:ios, "8.0"
+use_frameworks!
+target "MCSXY" do
+
+pod "FMDB"
+pod "Masonry"
+pod "MJRefresh"
+pod "SDWebImage"
+pod "YYKit"
+pod "DZNEmptyDataSet”
+pod "Alamofire"
+pod “Realm”
+
+end

@@ -1,0 +1,6 @@
+framework module Pods_MCSXY {
+  umbrella header "Pods-MCSXY-umbrella.h"
+
+  export *
+  module * { export * }
+}
