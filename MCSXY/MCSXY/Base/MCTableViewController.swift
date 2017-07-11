@@ -41,7 +41,7 @@ class MCTableViewController: MCListController {
 extension MCTableViewController{
     override func makeConstraintsForUI() {
         super.makeConstraintsForUI()
-        self.tableView?.frame = CGRect.init(x: 0, y: 0, width: Screen_Width, height: Screen_Height)
+        self.tableView?.frame = CGRect.init(x: 0, y: 0, width: self.view.zb_width!, height: self.view.zb_height!)
     }
     
     override func addSubViews() {

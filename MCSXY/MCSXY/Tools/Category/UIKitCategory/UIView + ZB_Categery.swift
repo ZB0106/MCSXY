@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 
 //radiocorener
-extension UIView{
+extension UIImage{
     
-    func ZB_Corner(corner: CGFloat) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, 0.0);
-        let context = UIGraphicsGetCurrentContext()
+    func ZB_Corner(corner: CGFloat, drawRect :CGRect) -> UIImage {
+
+        UIGraphicsBeginImageContextWithOptions(drawRect.size, false, 0.0);
         
+        let context = UIGraphicsGetCurrentContext()
         //画board（边框)
         //boardcolor和boarwidth
         context?.setStrokeColor(UIColor.red.cgColor)
@@ -23,26 +24,80 @@ extension UIView{
         
         
         //bezierPath
-        let bePath = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners:UIRectCorner.allCorners, cornerRadii: CGSize.init(width: corner, height: corner))
-        context?.addPath(bePath.cgPath)
+//        let bePath = UIBezierPath.init(roundeddrawRect: drawRect, byRoundingCorners:UIdrawRectCorner.allCorners, cornerRadii: CGSize.init(width: corner, height: corner))
+//        context?.addPath(bePath.cgPath)
         
         //cgpath
         let path = CGMutablePath.init()
         path .move(to: CGPoint.init(x: 0, y: 0))
-        path.addArc(tangent1End: CGPoint.init(x: self.bounds.size.width, y: 0), tangent2End: CGPoint.init(x: self.bounds.size.width, y: self.bounds.size.height), radius: corner)
-        path.addArc(tangent1End: CGPoint.init(x: self.bounds.size.width, y: self.bounds.size.height), tangent2End: CGPoint.init(x: 0, y: self.bounds.size.height), radius: corner)
-        path.addArc(tangent1End: CGPoint.init(x: 0, y: self.bounds.size.height), tangent2End: CGPoint.init(x: 0, y: 0), radius: corner)
-        path.addArc(tangent1End: CGPoint.init(x: 0, y: 0), tangent2End: CGPoint.init(x: self.bounds.size.width, y: 0), radius: corner)
+        path.addArc(tangent1End: CGPoint.init(x: drawRect.size.width, y: 0), tangent2End: CGPoint.init(x: drawRect.size.width, y: drawRect.size.height), radius: corner)
+        path.addArc(tangent1End: CGPoint.init(x: drawRect.size.width, y: drawRect.size.height), tangent2End: CGPoint.init(x: 0, y: drawRect.size.height), radius: corner)
+        path.addArc(tangent1End: CGPoint.init(x: 0, y: drawRect.size.height), tangent2End: CGPoint.init(x: 0, y: 0), radius: corner)
+        path.addArc(tangent1End: CGPoint.init(x: 0, y: 0), tangent2End: CGPoint.init(x: drawRect.size.width, y: 0), radius: corner)
         context?.addPath(path)
         
         context?.clip()
         context?.drawPath(using: CGPathDrawingMode.eoFillStroke)
         
-        
-        self .draw(self.frame)
+        self.draw(in: drawRect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
     }
     
+}
+
+//frame
+extension UIView{
+    var zb_x :CGFloat?{
+        set{
+            self.frame.origin.x = newValue!
+        }
+        get{
+            return self.frame.origin.x
+        }
+    }
+    var zb_y :CGFloat?{
+        set{
+            self.frame.origin.y = newValue!
+        }
+        get{
+            return self.frame.origin.y
+        }
+    }
+    var zb_width :CGFloat?{
+        set{
+            self.frame.size.width = newValue!
+        }
+        get{
+            return self.frame.size.width
+        }
+    }
+
+    var zb_height :CGFloat?{
+        set{
+            self.frame.size.height = newValue!
+        }
+        get{
+            return self.frame.size.height
+        }
+    }
+    var zb_origin :CGPoint?{
+        set{
+            self.frame.origin = newValue!
+        }
+        get{
+            return self.frame.origin
+        }
+    }
+    var zb_size :CGSize?{
+        set{
+            self.frame.size = newValue!
+        }
+        get{
+            return self.frame.size
+        }
+    }
+
+
 }

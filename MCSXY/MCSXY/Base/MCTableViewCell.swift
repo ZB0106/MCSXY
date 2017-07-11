@@ -22,11 +22,14 @@ public class MCTableViewCell: UITableViewCell {
 
 }
 
-extension MCTableViewCell : MCUIProtocol{
+extension MCTableViewCell : MCUIProtocol, ZB_ConfigurationDataProtocol{
     public func addSubViews() {
         
     }
     public func makeConstraintsForUI() {
+        
+    }
+    public func ZB_ConfigurationWithData(ZB_Data: Any?) {
         
     }
 }

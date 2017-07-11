@@ -19,6 +19,13 @@
 		21814FD41EF3CD2B00681F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21814FD31EF3CD2B00681F73 /* Assets.xcassets */; };
 		218150401EF3D97900681F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2181503A1EF3D97900681F73 /* AppDelegate.swift */; };
 		218150421EF3DA6800681F73 /* UtilsMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218150411EF3DA6800681F73 /* UtilsMacro.swift */; };
+		21881B561F144CE500BBC21E /* timg-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B551F144CE500BBC21E /* timg-2.jpeg */; };
+		21881B5B1F146C6B00BBC21E /* ZB_FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21881B5A1F146C6B00BBC21E /* ZB_FPSLabel.swift */; };
+		21881B5D1F14B00400BBC21E /* 18e58PICMwt_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B5C1F14B00400BBC21E /* 18e58PICMwt_1024.jpg */; };
+		21881B611F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B5E1F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg */; };
+		21881B621F14B00C00BBC21E /* 140-150F1142A0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B5F1F14B00C00BBC21E /* 140-150F1142A0.jpg */; };
+		21881B631F14B00C00BBC21E /* 160P3142450-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B601F14B00C00BBC21E /* 160P3142450-4.jpg */; };
+		21881B651F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21881B641F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift */; };
 		219F19551EF79DEF008D013B /* MCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19541EF79DEF008D013B /* MCTabBarController.swift */; };
 		219F19571EF79E19008D013B /* MCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19561EF79E19008D013B /* MCNavigationController.swift */; };
 		219F19591EF79E34008D013B /* MCGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19581EF79E34008D013B /* MCGuideController.swift */; };
@@ -85,6 +92,13 @@
 		21814FD31EF3CD2B00681F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2181503A1EF3D97900681F73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		218150411EF3DA6800681F73 /* UtilsMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsMacro.swift; sourceTree = "<group>"; };
+		21881B551F144CE500BBC21E /* timg-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-2.jpeg"; sourceTree = "<group>"; };
+		21881B5A1F146C6B00BBC21E /* ZB_FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_FPSLabel.swift; sourceTree = "<group>"; };
+		21881B5C1F14B00400BBC21E /* 18e58PICMwt_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 18e58PICMwt_1024.jpg; sourceTree = "<group>"; };
+		21881B5E1F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 57b2d98e109c6_1024.jpg; sourceTree = "<group>"; };
+		21881B5F1F14B00C00BBC21E /* 140-150F1142A0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "140-150F1142A0.jpg"; sourceTree = "<group>"; };
+		21881B601F14B00C00BBC21E /* 160P3142450-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "160P3142450-4.jpg"; sourceTree = "<group>"; };
+		21881B641F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_ConfigurationDataProtocol.swift; sourceTree = "<group>"; };
 		219F19541EF79DEF008D013B /* MCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTabBarController.swift; sourceTree = "<group>"; };
 		219F19561EF79E19008D013B /* MCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCNavigationController.swift; sourceTree = "<group>"; };
 		219F19581EF79E34008D013B /* MCGuideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCGuideController.swift; sourceTree = "<group>"; };
@@ -189,6 +203,11 @@
 		21814FA41EF3CCD400681F73 /* MCSXY */ = {
 			isa = PBXGroup;
 			children = (
+				21881B5C1F14B00400BBC21E /* 18e58PICMwt_1024.jpg */,
+				21881B5E1F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg */,
+				21881B5F1F14B00C00BBC21E /* 140-150F1142A0.jpg */,
+				21881B601F14B00C00BBC21E /* 160P3142450-4.jpg */,
+				21881B551F144CE500BBC21E /* timg-2.jpeg */,
 				2130C0961EFA0C2200492DD8 /* Header-Swift-OC.h */,
 				2130BFD21EF9FFE100492DD8 /* Resource */,
 				218150391EF3D97900681F73 /* Others */,
@@ -243,6 +262,7 @@
 				21A13ED41F132C2E00138B98 /* MCViewModelProtocol.swift */,
 				21A13ED91F134ED100138B98 /* MCTableViewInfo.swift */,
 				3B673E611F13D89D00171BE2 /* ZB_BindingViewModelProtocol.swift */,
+				21881B641F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1065,6 +1085,7 @@
 		2181503C1EF3D97900681F73 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				21881B591F146C6B00BBC21E /* UnitsComponnents */,
 				2130BFED1EFA0A6800492DD8 /* RHCustom */,
 				2181503D1EF3D97900681F73 /* Category */,
 				2181503E1EF3D97900681F73 /* NetworkTools */,
@@ -1094,6 +1115,14 @@
 			children = (
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		21881B591F146C6B00BBC21E /* UnitsComponnents */ = {
+			isa = PBXGroup;
+			children = (
+				21881B5A1F146C6B00BBC21E /* ZB_FPSLabel.swift */,
+			);
+			path = UnitsComponnents;
 			sourceTree = "<group>";
 		};
 		21A13ED11F13270100138B98 /* UIKitCategory */ = {
@@ -1232,8 +1261,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21881B5D1F14B00400BBC21E /* 18e58PICMwt_1024.jpg in Resources */,
 				21814FD41EF3CD2B00681F73 /* Assets.xcassets in Resources */,
+				21881B631F14B00C00BBC21E /* 160P3142450-4.jpg in Resources */,
+				21881B621F14B00C00BBC21E /* 140-150F1142A0.jpg in Resources */,
 				2130BFD41EF9FFE100492DD8 /* guidesBuddle.bundle in Resources */,
+				21881B561F144CE500BBC21E /* timg-2.jpeg in Resources */,
+				21881B611F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1321,7 +1355,9 @@
 				219F19631EF79F43008D013B /* MCCollectionViewController.swift in Sources */,
 				3B673E601F13CC3400171BE2 /* NSObject + ZB_ClassName.swift in Sources */,
 				211D9EE01EF8B73D00C3AC62 /* MCListController.swift in Sources */,
+				21881B651F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift in Sources */,
 				214774141EF3EA6D00042DCC /* MCAPPRoot.swift in Sources */,
+				21881B5B1F146C6B00BBC21E /* ZB_FPSLabel.swift in Sources */,
 				219F19711EF7A87E008D013B /* MCVideoController.swift in Sources */,
 				21A13ECD1F13266800138B98 /* ZB_BaseTableView.swift in Sources */,
 				213DE8841EFBB88500D49B3C /* MCRequestTool.swift in Sources */,

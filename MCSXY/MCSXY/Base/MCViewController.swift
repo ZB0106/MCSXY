@@ -20,6 +20,13 @@ public class MCViewController: UIViewController,ZB_BindingViewModelProtocol {
         self .bindingViewmodels()
     }
 
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        #if DEBUG
+        ZB_FPSLabel.show()
+        #endif
+        
+    }
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

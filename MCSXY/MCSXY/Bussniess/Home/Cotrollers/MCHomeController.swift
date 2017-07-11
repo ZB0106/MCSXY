@@ -12,6 +12,30 @@ class MCHomeController: MCViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let label = UILabel.init()
+        label.text = "ceshishsishfsioafjaofjaojfoajfajf"
+        label.frame = CGRect.init(x: 40, y: 200, width: 150, height: 150)
+        
+        label.backgroundColor = UIColor.clear
+        
+        
+        
+        self.view .addSubview(label)
+        
+       
+        
+        let ceshi = UIView.init()
+        ceshi.backgroundColor = UIColor.red
+        ceshi.frame = CGRect.init(x: 40, y: 40, width: 150, height: 150)
+        self.view .addSubview(ceshi)
+        
+        
+        let iconView = UIImageView.init()
+        iconView.backgroundColor = UIColor.blue
+        iconView.frame = CGRect.init(x: 40, y: 360, width: 150, height: 150)
+        self.view .addSubview(iconView)
 
         // Do any additional setup after loading the view.
     }
