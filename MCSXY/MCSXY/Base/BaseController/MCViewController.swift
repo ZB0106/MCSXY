@@ -8,16 +8,13 @@
 
 import UIKit
 
-public class MCViewController: UIViewController,ZB_BindingViewModelProtocol {
+public class MCViewController: UIViewController {
 
     
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        self .addSubViews()
-        self .makeConstraintsForUI()
-        
-        self .bindingViewmodels()
+        self .ZB_bindingViewmodels()
     }
 
     public override func viewWillAppear(_ animated: Bool) {
@@ -34,16 +31,9 @@ public class MCViewController: UIViewController,ZB_BindingViewModelProtocol {
     
 }
 
-extension MCViewController : MCUIProtocol{
-    public func addSubViews() {
-        
-    }
+extension MCViewController : ZB_BindingProtocol{
     
-    public func makeConstraintsForUI() {
-        
-    }
-    
-    public func bindingViewmodels() {
-        
+    public func ZB_bindingViewmodels() {
+      
     }
 }

@@ -22,14 +22,15 @@ public class MCTableViewCell: UITableViewCell {
 
 }
 
-extension MCTableViewCell : MCUIProtocol, ZB_ConfigurationDataProtocol{
+extension MCTableViewCell : ZB_UIProtocol, ZB_ConfigurationDataProtocol{
+    public func ZB_ConfigurationWithData(ZB_Data: Any?) {
+        
+    }
+
     public func addSubViews() {
         
     }
     public func makeConstraintsForUI() {
-        
-    }
-    public func ZB_ConfigurationWithData(ZB_Data: Any?) {
         
     }
 }

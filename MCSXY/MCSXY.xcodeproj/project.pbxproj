@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		211D9EE01EF8B73D00C3AC62 /* MCListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D9EDF1EF8B73D00C3AC62 /* MCListController.swift */; };
-		211D9EE41EF8B7D400C3AC62 /* MCCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D9EE31EF8B7D400C3AC62 /* MCCollectionCell.swift */; };
+		2118BD8A1F15F00000ADEF04 /* MCLiveViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD891F15F00000ADEF04 /* MCLiveViewManager.swift */; };
+		2118BD8E1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD8D1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift */; };
+		2118BD901F15FDB200ADEF04 /* ZB_DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD8F1F15FDB200ADEF04 /* ZB_DataViewModel.swift */; };
+		2118BD931F16030F00ADEF04 /* MCLiveDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD921F16030F00ADEF04 /* MCLiveDataViewModel.swift */; };
+		2118BD951F16177300ADEF04 /* ZB_NetWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD941F16177300ADEF04 /* ZB_NetWorkModel.swift */; };
 		2130BFD41EF9FFE100492DD8 /* guidesBuddle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2130BFD31EF9FFE100492DD8 /* guidesBuddle.bundle */; };
 		2130C0981EFA0E7000492DD8 /* ClassMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130C0971EFA0E7000492DD8 /* ClassMacro.swift */; };
 		2130C09C1EFA399A00492DD8 /* RHUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130C09B1EFA399A00492DD8 /* RHUserDefaults.swift */; };
 		213DE8841EFBB88500D49B3C /* MCRequestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213DE8831EFBB88500D49B3C /* MCRequestTool.swift */; };
 		214774141EF3EA6D00042DCC /* MCAPPRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214774131EF3EA6D00042DCC /* MCAPPRoot.swift */; };
+		214FB5251F15CC7A00FEC84F /* MCGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5241F15CC7A00FEC84F /* MCGuideController.swift */; };
+		214FB53E1F15CC9000FEC84F /* MCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5271F15CC9000FEC84F /* MCCollectionViewController.swift */; };
+		214FB53F1F15CC9000FEC84F /* MCListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5281F15CC9000FEC84F /* MCListController.swift */; };
+		214FB5401F15CC9000FEC84F /* MCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5291F15CC9000FEC84F /* MCNavigationController.swift */; };
+		214FB5411F15CC9000FEC84F /* MCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52A1F15CC9000FEC84F /* MCTabBarController.swift */; };
+		214FB5421F15CC9000FEC84F /* MCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52B1F15CC9000FEC84F /* MCTableViewController.swift */; };
+		214FB5431F15CC9000FEC84F /* MCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52C1F15CC9000FEC84F /* MCViewController.swift */; };
+		214FB5441F15CC9000FEC84F /* MCTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52E1F15CC9000FEC84F /* MCTableViewInfo.swift */; };
+		214FB5451F15CC9000FEC84F /* MCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52F1F15CC9000FEC84F /* MCViewModel.swift */; };
+		214FB5461F15CC9000FEC84F /* ZB_CommonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5301F15CC9000FEC84F /* ZB_CommonModels.swift */; };
+		214FB5471F15CC9000FEC84F /* ZB_EventManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5311F15CC9000FEC84F /* ZB_EventManagerModel.swift */; };
+		214FB5481F15CC9000FEC84F /* ZB_ViewManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5321F15CC9000FEC84F /* ZB_ViewManagerModel.swift */; };
+		214FB5491F15CC9000FEC84F /* ZB_UIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5341F15CC9000FEC84F /* ZB_UIProtocol.swift */; };
+		214FB54A1F15CC9000FEC84F /* ZB_ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5351F15CC9000FEC84F /* ZB_ViewModelProtocol.swift */; };
+		214FB54B1F15CC9000FEC84F /* ZB_BindingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5361F15CC9000FEC84F /* ZB_BindingProtocol.swift */; };
+		214FB54D1F15CC9000FEC84F /* ZB_ConfigurationDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5381F15CC9000FEC84F /* ZB_ConfigurationDataProtocol.swift */; };
+		214FB54E1F15CC9000FEC84F /* MCCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53A1F15CC9000FEC84F /* MCCollectionCell.swift */; };
+		214FB54F1F15CC9000FEC84F /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53B1F15CC9000FEC84F /* MCTableViewCell.swift */; };
+		214FB5501F15CC9000FEC84F /* MCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53C1F15CC9000FEC84F /* MCView.swift */; };
+		214FB5511F15CC9000FEC84F /* ZB_BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */; };
+		214FB5531F15E26600FEC84F /* ZB_TableViewManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5521F15E26600FEC84F /* ZB_TableViewManagerModel.swift */; };
 		21814FBB1EF3CCD500681F73 /* MCSXYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21814FBA1EF3CCD500681F73 /* MCSXYTests.swift */; };
 		21814FC61EF3CCD500681F73 /* MCSXYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21814FC51EF3CCD500681F73 /* MCSXYUITests.swift */; };
 		21814FD41EF3CD2B00681F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21814FD31EF3CD2B00681F73 /* Assets.xcassets */; };
@@ -25,32 +49,16 @@
 		21881B611F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B5E1F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg */; };
 		21881B621F14B00C00BBC21E /* 140-150F1142A0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B5F1F14B00C00BBC21E /* 140-150F1142A0.jpg */; };
 		21881B631F14B00C00BBC21E /* 160P3142450-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21881B601F14B00C00BBC21E /* 160P3142450-4.jpg */; };
-		21881B651F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21881B641F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift */; };
-		219F19551EF79DEF008D013B /* MCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19541EF79DEF008D013B /* MCTabBarController.swift */; };
-		219F19571EF79E19008D013B /* MCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19561EF79E19008D013B /* MCNavigationController.swift */; };
-		219F19591EF79E34008D013B /* MCGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19581EF79E34008D013B /* MCGuideController.swift */; };
-		219F195B1EF79EAF008D013B /* MCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F195A1EF79EAF008D013B /* MCView.swift */; };
-		219F195D1EF79EC1008D013B /* MCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F195C1EF79EC1008D013B /* MCViewController.swift */; };
-		219F195F1EF79EE2008D013B /* MCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F195E1EF79EE2008D013B /* MCViewModel.swift */; };
-		219F19611EF79F0D008D013B /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19601EF79F0D008D013B /* MCTableViewCell.swift */; };
-		219F19631EF79F43008D013B /* MCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19621EF79F43008D013B /* MCCollectionViewController.swift */; };
-		219F19671EF79FCC008D013B /* MCUIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19661EF79FCC008D013B /* MCUIProtocol.swift */; };
 		219F19691EF7A808008D013B /* MCHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19681EF7A808008D013B /* MCHomeController.swift */; };
-		219F196B1EF7A821008D013B /* MCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F196A1EF7A821008D013B /* MCTableViewController.swift */; };
 		219F196F1EF7A852008D013B /* MCMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F196E1EF7A852008D013B /* MCMineController.swift */; };
 		219F19711EF7A87E008D013B /* MCVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19701EF7A87E008D013B /* MCVideoController.swift */; };
 		219F19731EF7A88F008D013B /* MCLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19721EF7A88F008D013B /* MCLoginController.swift */; };
 		219F19751EF7AC52008D013B /* MCLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19741EF7AC52008D013B /* MCLiveController.swift */; };
-		21A13ECB1F13265200138B98 /* ZB_CommonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13ECA1F13265200138B98 /* ZB_CommonModels.swift */; };
-		21A13ECD1F13266800138B98 /* ZB_BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13ECC1F13266800138B98 /* ZB_BaseTableView.swift */; };
 		21A13ED31F13271400138B98 /* UIView + ZB_Categery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13ED21F13271400138B98 /* UIView + ZB_Categery.swift */; };
-		21A13ED51F132C2E00138B98 /* MCViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13ED41F132C2E00138B98 /* MCViewModelProtocol.swift */; };
-		21A13EDA1F134ED100138B98 /* MCTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13ED91F134ED100138B98 /* MCTableViewInfo.swift */; };
 		21A13EE21F13745000138B98 /* MCLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13EE11F13745000138B98 /* MCLiveCell.swift */; };
 		21A13EE41F13792000138B98 /* MCLiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13EE31F13792000138B98 /* MCLiveViewModel.swift */; };
 		21DAB1B61EFCCA2600438D11 /* MCToolFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DAB1B51EFCCA2600438D11 /* MCToolFunc.swift */; };
 		3B673E601F13CC3400171BE2 /* NSObject + ZB_ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B673E5F1F13CC3400171BE2 /* NSObject + ZB_ClassName.swift */; };
-		3B673E621F13D89D00171BE2 /* ZB_BindingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B673E611F13D89D00171BE2 /* ZB_BindingViewModelProtocol.swift */; };
 		AFBABE734B84FF753200BDAE /* Pods_MCSXY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D450F5DFF30BA99C7309B8 /* Pods_MCSXY.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,14 +81,38 @@
 
 /* Begin PBXFileReference section */
 		03D450F5DFF30BA99C7309B8 /* Pods_MCSXY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCSXY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		211D9EDF1EF8B73D00C3AC62 /* MCListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCListController.swift; sourceTree = "<group>"; };
-		211D9EE31EF8B7D400C3AC62 /* MCCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCCollectionCell.swift; sourceTree = "<group>"; };
+		2118BD891F15F00000ADEF04 /* MCLiveViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveViewManager.swift; sourceTree = "<group>"; };
+		2118BD8D1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_FetchDataProtocol.swift; sourceTree = "<group>"; };
+		2118BD8F1F15FDB200ADEF04 /* ZB_DataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_DataViewModel.swift; sourceTree = "<group>"; };
+		2118BD921F16030F00ADEF04 /* MCLiveDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveDataViewModel.swift; sourceTree = "<group>"; };
+		2118BD941F16177300ADEF04 /* ZB_NetWorkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_NetWorkModel.swift; sourceTree = "<group>"; };
 		2130BFD31EF9FFE100492DD8 /* guidesBuddle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = guidesBuddle.bundle; sourceTree = "<group>"; };
 		2130C0961EFA0C2200492DD8 /* Header-Swift-OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Swift-OC.h"; sourceTree = "<group>"; };
 		2130C0971EFA0E7000492DD8 /* ClassMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassMacro.swift; sourceTree = "<group>"; };
 		2130C09B1EFA399A00492DD8 /* RHUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHUserDefaults.swift; sourceTree = "<group>"; };
 		213DE8831EFBB88500D49B3C /* MCRequestTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCRequestTool.swift; sourceTree = "<group>"; };
 		214774131EF3EA6D00042DCC /* MCAPPRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCAPPRoot.swift; sourceTree = "<group>"; };
+		214FB5241F15CC7A00FEC84F /* MCGuideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCGuideController.swift; sourceTree = "<group>"; };
+		214FB5271F15CC9000FEC84F /* MCCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCCollectionViewController.swift; sourceTree = "<group>"; };
+		214FB5281F15CC9000FEC84F /* MCListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCListController.swift; sourceTree = "<group>"; };
+		214FB5291F15CC9000FEC84F /* MCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCNavigationController.swift; sourceTree = "<group>"; };
+		214FB52A1F15CC9000FEC84F /* MCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTabBarController.swift; sourceTree = "<group>"; };
+		214FB52B1F15CC9000FEC84F /* MCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewController.swift; sourceTree = "<group>"; };
+		214FB52C1F15CC9000FEC84F /* MCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCViewController.swift; sourceTree = "<group>"; };
+		214FB52E1F15CC9000FEC84F /* MCTableViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewInfo.swift; sourceTree = "<group>"; };
+		214FB52F1F15CC9000FEC84F /* MCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCViewModel.swift; sourceTree = "<group>"; };
+		214FB5301F15CC9000FEC84F /* ZB_CommonModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_CommonModels.swift; sourceTree = "<group>"; };
+		214FB5311F15CC9000FEC84F /* ZB_EventManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_EventManagerModel.swift; sourceTree = "<group>"; };
+		214FB5321F15CC9000FEC84F /* ZB_ViewManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_ViewManagerModel.swift; sourceTree = "<group>"; };
+		214FB5341F15CC9000FEC84F /* ZB_UIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_UIProtocol.swift; sourceTree = "<group>"; };
+		214FB5351F15CC9000FEC84F /* ZB_ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_ViewModelProtocol.swift; sourceTree = "<group>"; };
+		214FB5361F15CC9000FEC84F /* ZB_BindingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_BindingProtocol.swift; sourceTree = "<group>"; };
+		214FB5381F15CC9000FEC84F /* ZB_ConfigurationDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_ConfigurationDataProtocol.swift; sourceTree = "<group>"; };
+		214FB53A1F15CC9000FEC84F /* MCCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCCollectionCell.swift; sourceTree = "<group>"; };
+		214FB53B1F15CC9000FEC84F /* MCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
+		214FB53C1F15CC9000FEC84F /* MCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCView.swift; sourceTree = "<group>"; };
+		214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_BaseTableView.swift; sourceTree = "<group>"; };
+		214FB5521F15E26600FEC84F /* ZB_TableViewManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_TableViewManagerModel.swift; sourceTree = "<group>"; };
 		21814FA21EF3CCD400681F73 /* MCSXY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCSXY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21814FB11EF3CCD400681F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21814FB61EF3CCD500681F73 /* MCSXYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCSXYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,32 +130,16 @@
 		21881B5E1F14B00C00BBC21E /* 57b2d98e109c6_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 57b2d98e109c6_1024.jpg; sourceTree = "<group>"; };
 		21881B5F1F14B00C00BBC21E /* 140-150F1142A0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "140-150F1142A0.jpg"; sourceTree = "<group>"; };
 		21881B601F14B00C00BBC21E /* 160P3142450-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "160P3142450-4.jpg"; sourceTree = "<group>"; };
-		21881B641F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_ConfigurationDataProtocol.swift; sourceTree = "<group>"; };
-		219F19541EF79DEF008D013B /* MCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTabBarController.swift; sourceTree = "<group>"; };
-		219F19561EF79E19008D013B /* MCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCNavigationController.swift; sourceTree = "<group>"; };
-		219F19581EF79E34008D013B /* MCGuideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCGuideController.swift; sourceTree = "<group>"; };
-		219F195A1EF79EAF008D013B /* MCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCView.swift; sourceTree = "<group>"; };
-		219F195C1EF79EC1008D013B /* MCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCViewController.swift; sourceTree = "<group>"; };
-		219F195E1EF79EE2008D013B /* MCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCViewModel.swift; sourceTree = "<group>"; };
-		219F19601EF79F0D008D013B /* MCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
-		219F19621EF79F43008D013B /* MCCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCCollectionViewController.swift; sourceTree = "<group>"; };
-		219F19661EF79FCC008D013B /* MCUIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCUIProtocol.swift; sourceTree = "<group>"; };
 		219F19681EF7A808008D013B /* MCHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCHomeController.swift; sourceTree = "<group>"; };
-		219F196A1EF7A821008D013B /* MCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewController.swift; sourceTree = "<group>"; };
 		219F196E1EF7A852008D013B /* MCMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMineController.swift; sourceTree = "<group>"; };
 		219F19701EF7A87E008D013B /* MCVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCVideoController.swift; sourceTree = "<group>"; };
 		219F19721EF7A88F008D013B /* MCLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLoginController.swift; sourceTree = "<group>"; };
 		219F19741EF7AC52008D013B /* MCLiveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveController.swift; sourceTree = "<group>"; };
-		21A13ECA1F13265200138B98 /* ZB_CommonModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_CommonModels.swift; sourceTree = "<group>"; };
-		21A13ECC1F13266800138B98 /* ZB_BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_BaseTableView.swift; sourceTree = "<group>"; };
 		21A13ED21F13271400138B98 /* UIView + ZB_Categery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + ZB_Categery.swift"; sourceTree = "<group>"; };
-		21A13ED41F132C2E00138B98 /* MCViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCViewModelProtocol.swift; sourceTree = "<group>"; };
-		21A13ED91F134ED100138B98 /* MCTableViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewInfo.swift; sourceTree = "<group>"; };
 		21A13EE11F13745000138B98 /* MCLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveCell.swift; sourceTree = "<group>"; };
 		21A13EE31F13792000138B98 /* MCLiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveViewModel.swift; sourceTree = "<group>"; };
 		21DAB1B51EFCCA2600438D11 /* MCToolFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCToolFunc.swift; sourceTree = "<group>"; };
 		3B673E5F1F13CC3400171BE2 /* NSObject + ZB_ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject + ZB_ClassName.swift"; sourceTree = "<group>"; };
-		3B673E611F13D89D00171BE2 /* ZB_BindingViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_BindingViewModelProtocol.swift; sourceTree = "<group>"; };
 		751458C88F9ABDD171C595ED /* Pods-MCSXY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCSXY.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCSXY/Pods-MCSXY.release.xcconfig"; sourceTree = "<group>"; };
 		9452ECED1E3A8E58C8511C76 /* Pods-MCSXY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCSXY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCSXY/Pods-MCSXY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +192,56 @@
 				2130C09B1EFA399A00492DD8 /* RHUserDefaults.swift */,
 			);
 			path = RHCustom;
+			sourceTree = "<group>";
+		};
+		214FB5261F15CC9000FEC84F /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				214FB5271F15CC9000FEC84F /* MCCollectionViewController.swift */,
+				214FB5281F15CC9000FEC84F /* MCListController.swift */,
+				214FB5291F15CC9000FEC84F /* MCNavigationController.swift */,
+				214FB52A1F15CC9000FEC84F /* MCTabBarController.swift */,
+				214FB52B1F15CC9000FEC84F /* MCTableViewController.swift */,
+				214FB52C1F15CC9000FEC84F /* MCViewController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		214FB52D1F15CC9000FEC84F /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				214FB52E1F15CC9000FEC84F /* MCTableViewInfo.swift */,
+				214FB52F1F15CC9000FEC84F /* MCViewModel.swift */,
+				214FB5301F15CC9000FEC84F /* ZB_CommonModels.swift */,
+				214FB5311F15CC9000FEC84F /* ZB_EventManagerModel.swift */,
+				214FB5321F15CC9000FEC84F /* ZB_ViewManagerModel.swift */,
+				214FB5521F15E26600FEC84F /* ZB_TableViewManagerModel.swift */,
+				2118BD8F1F15FDB200ADEF04 /* ZB_DataViewModel.swift */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		214FB5331F15CC9000FEC84F /* BaseProtol */ = {
+			isa = PBXGroup;
+			children = (
+				214FB5341F15CC9000FEC84F /* ZB_UIProtocol.swift */,
+				214FB5351F15CC9000FEC84F /* ZB_ViewModelProtocol.swift */,
+				214FB5361F15CC9000FEC84F /* ZB_BindingProtocol.swift */,
+				214FB5381F15CC9000FEC84F /* ZB_ConfigurationDataProtocol.swift */,
+				2118BD8D1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift */,
+			);
+			path = BaseProtol;
+			sourceTree = "<group>";
+		};
+		214FB5391F15CC9000FEC84F /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				214FB53A1F15CC9000FEC84F /* MCCollectionCell.swift */,
+				214FB53B1F15CC9000FEC84F /* MCTableViewCell.swift */,
+				214FB53C1F15CC9000FEC84F /* MCView.swift */,
+				214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		21814F991EF3CCD400681F73 = {
@@ -245,24 +311,10 @@
 		21814FD51EF3D97900681F73 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				21A13ECC1F13266800138B98 /* ZB_BaseTableView.swift */,
-				21A13ECA1F13265200138B98 /* ZB_CommonModels.swift */,
-				219F19541EF79DEF008D013B /* MCTabBarController.swift */,
-				219F19561EF79E19008D013B /* MCNavigationController.swift */,
-				219F19581EF79E34008D013B /* MCGuideController.swift */,
-				219F195A1EF79EAF008D013B /* MCView.swift */,
-				219F195C1EF79EC1008D013B /* MCViewController.swift */,
-				219F195E1EF79EE2008D013B /* MCViewModel.swift */,
-				219F19601EF79F0D008D013B /* MCTableViewCell.swift */,
-				219F19621EF79F43008D013B /* MCCollectionViewController.swift */,
-				219F19661EF79FCC008D013B /* MCUIProtocol.swift */,
-				219F196A1EF7A821008D013B /* MCTableViewController.swift */,
-				211D9EDF1EF8B73D00C3AC62 /* MCListController.swift */,
-				211D9EE31EF8B7D400C3AC62 /* MCCollectionCell.swift */,
-				21A13ED41F132C2E00138B98 /* MCViewModelProtocol.swift */,
-				21A13ED91F134ED100138B98 /* MCTableViewInfo.swift */,
-				3B673E611F13D89D00171BE2 /* ZB_BindingViewModelProtocol.swift */,
-				21881B641F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift */,
+				214FB5261F15CC9000FEC84F /* BaseController */,
+				214FB52D1F15CC9000FEC84F /* BaseModel */,
+				214FB5331F15CC9000FEC84F /* BaseProtol */,
+				214FB5391F15CC9000FEC84F /* BaseView */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -431,6 +483,8 @@
 			isa = PBXGroup;
 			children = (
 				21A13EE31F13792000138B98 /* MCLiveViewModel.swift */,
+				2118BD891F15F00000ADEF04 /* MCLiveViewManager.swift */,
+				2118BD921F16030F00ADEF04 /* MCLiveDataViewModel.swift */,
 			);
 			path = VIewModels;
 			sourceTree = "<group>";
@@ -1077,6 +1131,7 @@
 		2181503B1EF3D97900681F73 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				214FB5241F15CC7A00FEC84F /* MCGuideController.swift */,
 				214774131EF3EA6D00042DCC /* MCAPPRoot.swift */,
 			);
 			path = Root;
@@ -1106,6 +1161,7 @@
 			isa = PBXGroup;
 			children = (
 				213DE8831EFBB88500D49B3C /* MCRequestTool.swift */,
+				2118BD941F16177300ADEF04 /* ZB_NetWorkModel.swift */,
 			);
 			path = NetworkTools;
 			sourceTree = "<group>";
@@ -1340,41 +1396,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219F195F1EF79EE2008D013B /* MCViewModel.swift in Sources */,
+				214FB5421F15CC9000FEC84F /* MCTableViewController.swift in Sources */,
+				2118BD8E1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift in Sources */,
 				21A13EE21F13745000138B98 /* MCLiveCell.swift in Sources */,
-				219F196B1EF7A821008D013B /* MCTableViewController.swift in Sources */,
-				21A13ECB1F13265200138B98 /* ZB_CommonModels.swift in Sources */,
 				21DAB1B61EFCCA2600438D11 /* MCToolFunc.swift in Sources */,
-				219F19611EF79F0D008D013B /* MCTableViewCell.swift in Sources */,
+				214FB54F1F15CC9000FEC84F /* MCTableViewCell.swift in Sources */,
 				2130C0981EFA0E7000492DD8 /* ClassMacro.swift in Sources */,
+				214FB5461F15CC9000FEC84F /* ZB_CommonModels.swift in Sources */,
 				21A13EE41F13792000138B98 /* MCLiveViewModel.swift in Sources */,
-				219F195D1EF79EC1008D013B /* MCViewController.swift in Sources */,
+				214FB5491F15CC9000FEC84F /* ZB_UIProtocol.swift in Sources */,
+				214FB5431F15CC9000FEC84F /* MCViewController.swift in Sources */,
 				218150421EF3DA6800681F73 /* UtilsMacro.swift in Sources */,
+				2118BD8A1F15F00000ADEF04 /* MCLiveViewManager.swift in Sources */,
 				219F196F1EF7A852008D013B /* MCMineController.swift in Sources */,
+				214FB54B1F15CC9000FEC84F /* ZB_BindingProtocol.swift in Sources */,
 				219F19691EF7A808008D013B /* MCHomeController.swift in Sources */,
-				219F19631EF79F43008D013B /* MCCollectionViewController.swift in Sources */,
+				214FB5401F15CC9000FEC84F /* MCNavigationController.swift in Sources */,
+				2118BD951F16177300ADEF04 /* ZB_NetWorkModel.swift in Sources */,
+				214FB54E1F15CC9000FEC84F /* MCCollectionCell.swift in Sources */,
+				214FB5251F15CC7A00FEC84F /* MCGuideController.swift in Sources */,
+				214FB5501F15CC9000FEC84F /* MCView.swift in Sources */,
 				3B673E601F13CC3400171BE2 /* NSObject + ZB_ClassName.swift in Sources */,
-				211D9EE01EF8B73D00C3AC62 /* MCListController.swift in Sources */,
-				21881B651F14B35700BBC21E /* ZB_ConfigurationDataProtocol.swift in Sources */,
 				214774141EF3EA6D00042DCC /* MCAPPRoot.swift in Sources */,
 				21881B5B1F146C6B00BBC21E /* ZB_FPSLabel.swift in Sources */,
+				214FB5481F15CC9000FEC84F /* ZB_ViewManagerModel.swift in Sources */,
+				214FB5531F15E26600FEC84F /* ZB_TableViewManagerModel.swift in Sources */,
+				214FB53E1F15CC9000FEC84F /* MCCollectionViewController.swift in Sources */,
 				219F19711EF7A87E008D013B /* MCVideoController.swift in Sources */,
-				21A13ECD1F13266800138B98 /* ZB_BaseTableView.swift in Sources */,
+				2118BD931F16030F00ADEF04 /* MCLiveDataViewModel.swift in Sources */,
 				213DE8841EFBB88500D49B3C /* MCRequestTool.swift in Sources */,
+				214FB5441F15CC9000FEC84F /* MCTableViewInfo.swift in Sources */,
 				219F19751EF7AC52008D013B /* MCLiveController.swift in Sources */,
-				219F19591EF79E34008D013B /* MCGuideController.swift in Sources */,
 				2130C09C1EFA399A00492DD8 /* RHUserDefaults.swift in Sources */,
-				211D9EE41EF8B7D400C3AC62 /* MCCollectionCell.swift in Sources */,
-				219F19571EF79E19008D013B /* MCNavigationController.swift in Sources */,
+				214FB5411F15CC9000FEC84F /* MCTabBarController.swift in Sources */,
 				218150401EF3D97900681F73 /* AppDelegate.swift in Sources */,
-				21A13ED51F132C2E00138B98 /* MCViewModelProtocol.swift in Sources */,
 				219F19731EF7A88F008D013B /* MCLoginController.swift in Sources */,
+				214FB53F1F15CC9000FEC84F /* MCListController.swift in Sources */,
 				21A13ED31F13271400138B98 /* UIView + ZB_Categery.swift in Sources */,
-				219F19671EF79FCC008D013B /* MCUIProtocol.swift in Sources */,
-				219F19551EF79DEF008D013B /* MCTabBarController.swift in Sources */,
-				21A13EDA1F134ED100138B98 /* MCTableViewInfo.swift in Sources */,
-				3B673E621F13D89D00171BE2 /* ZB_BindingViewModelProtocol.swift in Sources */,
-				219F195B1EF79EAF008D013B /* MCView.swift in Sources */,
+				214FB5511F15CC9000FEC84F /* ZB_BaseTableView.swift in Sources */,
+				2118BD901F15FDB200ADEF04 /* ZB_DataViewModel.swift in Sources */,
+				214FB5471F15CC9000FEC84F /* ZB_EventManagerModel.swift in Sources */,
+				214FB54D1F15CC9000FEC84F /* ZB_ConfigurationDataProtocol.swift in Sources */,
+				214FB5451F15CC9000FEC84F /* MCViewModel.swift in Sources */,
+				214FB54A1F15CC9000FEC84F /* ZB_ViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,14 +10,7 @@ import UIKit
 
 class MCLiveViewModel: MCViewModel {
 
-    override func MC_bindingViewController(viewController: MCViewController?, viewModelHandeler: HandelerBlock?) {
-        super.MC_bindingViewController(viewController: viewController, viewModelHandeler: viewModelHandeler)
-    }
-    override func MC_loadData(dataHandeler: HandelerDataBlock?) {
-        super.MC_loadData(dataHandeler: dataHandeler)
-        let array = [1,2,3,4,5,6,1,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6]
+    override func ZB_ConfigurationWithData(ZB_Data: Any?) {
         
-        dataHandeler!(array)
     }
-
 }

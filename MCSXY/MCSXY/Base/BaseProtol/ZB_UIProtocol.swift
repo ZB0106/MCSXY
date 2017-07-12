@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public protocol MCUIProtocol :NSObjectProtocol{
+@objc public protocol ZB_UIProtocol :NSObjectProtocol{
     
    @objc optional func addSubViews()
    @objc optional func makeConstraintsForUI()

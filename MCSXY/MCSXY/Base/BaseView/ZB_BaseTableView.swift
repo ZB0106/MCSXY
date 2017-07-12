@@ -31,11 +31,11 @@ class ZB_BaseTableView: UITableView {
             self.tableViewInfos = tableViewInfosType.init()
             if ((self.tableViewInfos?.infos?.count) != 0) {
                 for tableViewInfo in (self.tableViewInfos?.infos)! {
-                    if (tableViewInfo.cellClass != nil) && (tableViewInfo.cellIdentifier != nil) {
-                        self .register(NSClassFromString(tableViewInfo.cellClass!), forCellReuseIdentifier: tableViewInfo.cellIdentifier!)
+                    if (tableViewInfo.cellClass != nil) {
+                        self .register(NSClassFromString(tableViewInfo.cellClass!), forCellReuseIdentifier: tableViewInfo.cellClass!)
                     }
-                    if (tableViewInfo.groupClass != nil) && (tableViewInfo.groupIdentifier != nil) {
-                        self.register(NSClassFromString(tableViewInfo.groupClass!), forHeaderFooterViewReuseIdentifier: tableViewInfo.groupIdentifier!)
+                    if (tableViewInfo.groupClass != nil) {
+                        self.register(NSClassFromString(tableViewInfo.groupClass!), forHeaderFooterViewReuseIdentifier: tableViewInfo.groupClass!)
                     }
                     
                 }
@@ -63,7 +63,7 @@ extension ZB_BaseTableView:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableInfo = self.tableViewInfos?.infos?.last
-        let cell = tableView .dequeueReusableCell(withIdentifier: (tableInfo?.cellIdentifier)!) as? MCTableViewCell
+        let cell = tableView .dequeueReusableCell(withIdentifier: (tableInfo?.cellClass)!) as? MCTableViewCell
         cell?.ZB_ConfigurationWithData(ZB_Data: nil)
         return cell!
     }

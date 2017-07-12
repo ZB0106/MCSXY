@@ -9,8 +9,7 @@
 import Foundation
 
 class MCTableViewInfo: NSObject {
-    var cellIdentifier :String?
-    var groupIdentifier :String?
+    
     var groupClass :String?
     var cellClass :String?
 
@@ -31,7 +30,6 @@ class MCLiveTableViewInfos: MCBaseTableViewInfos {
       required init() {
         super.init()
         let info = MCTableViewInfo.init()
-        info.cellIdentifier = "liveCell"
         info.cellClass = NSObject.classNameAndSpaceName(className: "MCLiveCell")
         self.infos = [info]
     }

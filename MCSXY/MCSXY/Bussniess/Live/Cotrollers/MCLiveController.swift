@@ -22,15 +22,17 @@ class MCLiveController: MCTableViewController {
 }
 
 extension MCLiveController{
-    override func bindingViewmodels() {
-        
-        let liveViewModel = MCLiveViewModel.init()
-        liveViewModel.MC_bindingViewController(viewController: self) {
+ 
+    override func ZB_bindingViewmodels() {
+        let liveManager = MCLiveViewManager.init()
+        liveManager .ZB_bindingViewMangerModel(viewController: self) { 
             () -> Void in
+            
         }
         
-        liveViewModel.MC_loadData { (array) -> Void in
-            self.tableView?.dataArray = array
-        }
+        let liveDataViewModel = MCLiveDataViewModel .init()
+        liveDataViewModel.ZB_loadData { (array) in
+            liveManager.tableView?.dataArray = array as? Array
+       }
     }
 }

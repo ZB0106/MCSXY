@@ -7,6 +7,6 @@
 //
 
 import Foundation
-@objc public protocol ZB_ConfigurationDataProtocol {
-  @objc optional func ZB_ConfigurationWithData(ZB_Data :Any?) -> Void
+@objc public protocol ZB_ConfigurationDataProtocol:NSObjectProtocol {
+    @objc optional func ZB_ConfigurationWithData(ZB_Data :Any?) -> Void
 }

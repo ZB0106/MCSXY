@@ -15,7 +15,9 @@ class MCRequestTool: NSObject {
      private override init() {
     
     }
-   class func request() -> Void {
     
+    class func ZB_request(requestModel :ZB_NetWorkModel, requestHandel :HandelerDataBlock<Any>) -> Void {
+        let dRe : DataRequest = Alamofire.request("fdafa", method: HTTPMethod.post, parameters: requestModel.paragram, encoding:URLEncoding.default, headers: requestModel.httpHeader)
+        
     }
 }

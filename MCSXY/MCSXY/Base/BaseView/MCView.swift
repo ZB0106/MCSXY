@@ -12,7 +12,7 @@ public class MCView: UIView{
    
 }
 
-extension MCView : MCUIProtocol{
+extension MCView : ZB_UIProtocol{
     public func addSubViews() {
         
     }
