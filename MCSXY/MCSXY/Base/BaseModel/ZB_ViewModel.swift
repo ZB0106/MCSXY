@@ -8,9 +8,12 @@
 
 import UIKit
 //负责展示数据
-class MCViewModel: NSObject,ZB_ViewModelProtocol, ZB_ConfigurationDataProtocol {
+class ZB_ViewModel: NSObject,ZB_ViewModelProtocol, ZB_ConfigurationDataProtocol {
 
-   weak var view :UIView?
+   required override init() {
+        super.init()
+    }
+   weak var dataView :UIView?
     var viewModelHandeler :HandelerBlock?
     func ZB_ConfigurationWithData(ZB_Data: Any?) {
         

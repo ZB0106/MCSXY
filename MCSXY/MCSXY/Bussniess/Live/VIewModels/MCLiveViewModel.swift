@@ -8,9 +8,7 @@
 
 import UIKit
 
-class MCLiveViewModel: MCViewModel {
+class MCLiveViewModel: ZB_TableViewModel {
 
-    override func ZB_ConfigurationWithData(ZB_Data: Any?) {
-        
-    }
+    
 }

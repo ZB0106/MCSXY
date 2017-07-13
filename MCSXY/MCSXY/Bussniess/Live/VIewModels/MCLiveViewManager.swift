@@ -10,19 +10,5 @@ import UIKit
 
 class MCLiveViewManager: ZB_TableViewManagerModel {
 
-    var _liveViewModel :MCLiveViewModel?
-    fileprivate(set) var liveViewModel :MCLiveViewModel?{
-        get{
-            return _liveViewModel
-        }
-        set{
-            _liveViewModel = newValue
-        }
-    }
-
-    override func ZB_bindingViewModelForView() {
-        
-        self.liveViewModel = MCLiveViewModel.init()
-        liveViewModel?.view = self.tableView
-    }
+    
 }

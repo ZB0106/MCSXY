@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MCLiveDataViewModel: ZB_DataViewModel {
+class MCLiveDataViewModel: ZB_DataTableViewModel {
 
+    
     override func ZB_loadData(dataHandeler: ((Any) -> Void)?) {
         let array = [1,2,3,4,5,6,1,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6,3,4,5,6,2,3,4,5,6]
         if dataHandeler != nil {

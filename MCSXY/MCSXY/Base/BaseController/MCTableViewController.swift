@@ -26,6 +26,6 @@ class MCTableViewController: MCListController {
 extension MCTableViewController{
     
     override func ZB_bindingViewmodels() {
-        
+        super.ZB_bindingViewmodels()
     }
 }

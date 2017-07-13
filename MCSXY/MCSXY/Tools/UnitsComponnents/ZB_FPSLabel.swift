@@ -11,6 +11,8 @@ import UIKit
 class ZB_FPSLabel: UILabel {
 
     static var fpsWindow :UIWindow?
+    static var label :ZB_FPSLabel?
+    
     
     let defaultSize = CGSize.init(width: 75, height: 30)
     var link :CADisplayLink?
@@ -45,15 +47,19 @@ class ZB_FPSLabel: UILabel {
 extension ZB_FPSLabel{
     
     class func show() -> Void {
-       let fps = ZB_FPSLabel.init()
-        fps.zb_x = Screen_Width - 40 - 75
-        fps.zb_y = 20
+        
+        if label != nil {
+            return
+        }
+        label = ZB_FPSLabel.init()
+        label?.zb_x = Screen_Width - 40 - 75
+        label?.zb_y = 20
         if self.fpsWindow == nil {
             self.fpsWindow = UIWindow.init(frame: CGRect.init(x: 0, y: 0, width: Screen_Width, height: 64.0))
             self.fpsWindow?.isHidden = false
             self.fpsWindow?.windowLevel = UIWindowLevelAlert
         }
-        self.fpsWindow?.addSubview(fps)
+        self.fpsWindow?.addSubview(label!)
     }
    class func hide() -> Void {
         for view in (self.fpsWindow?.subviews)! {

@@ -15,9 +15,16 @@ class ZB_NetWorkModel: NSObject {
     var isCache :Bool = false
     var isShowLoading :Bool = false
     var isNeedRetry :Bool = false
-    var baseUrl :String?
+    var baseUrl :String = MiaoCaiBaseUrl
     var APIUrl :String?
-    var httpHeader :Dictionary<String,String>?
-    var requestMethod :String?
+   fileprivate(set) var httpHeader :Dictionary<String,String>?
+    var httpMethod :String = "POST"
     
+}
+
+class MCLiveRequestModel: ZB_NetWorkModel {
+    override init() {
+        super.init()
+        self.APIUrl = API_LiveList
+    }
 }

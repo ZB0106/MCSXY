@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MCLiveController: MCTableViewController {
+ class MCLiveController: MCTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.viewModelManager? .ZB_loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,17 +22,5 @@ class MCLiveController: MCTableViewController {
 }
 
 extension MCLiveController{
- 
-    override func ZB_bindingViewmodels() {
-        let liveManager = MCLiveViewManager.init()
-        liveManager .ZB_bindingViewMangerModel(viewController: self) { 
-            () -> Void in
-            
-        }
-        
-        let liveDataViewModel = MCLiveDataViewModel .init()
-        liveDataViewModel.ZB_loadData { (array) in
-            liveManager.tableView?.dataArray = array as? Array
-       }
-    }
+
 }

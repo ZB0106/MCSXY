@@ -10,17 +10,8 @@ import Foundation
 
 class ZB_TableViewManagerModel: ZB_ViewManagerModel {
     
-    var _tableView :ZB_BaseTableView?
-    fileprivate(set) var tableView :ZB_BaseTableView?{
-        get{
-            return _tableView
-        }
-        set{
-            _tableView = newValue
-        }
-    }
+    var tableView :ZB_BaseTableView?
     
-    static var tableViewInfoDict = [NSObject.classNameAndSpaceName(className: "MCLiveViewManager"):NSObject.classNameAndSpaceName(className: "MCLiveTableViewInfos")]
     
     override func makeConstraintsForUI() {
         super.makeConstraintsForUI()
@@ -31,13 +22,22 @@ class ZB_TableViewManagerModel: ZB_ViewManagerModel {
         super.addSubViews()
         
         let cls = NSStringFromClass(type(of: self))
-        let tableViewInfo = ZB_TableViewManagerModel.tableViewInfoDict[cls];
+        let tableViewInfo = tableViewInfoDict[cls];
         
         self.tableView = ZB_BaseTableView.init(infoClass: tableViewInfo!)
         self.viewController?.view .addSubview(tableView!)
     }
     
     override func ZB_bindingViewModelForView() {
+        //调用父类的方法创建dataViewmodel，必须super
+        super.ZB_bindingViewModelForView()
         
+        dataViewModel?.dataView = self.tableView
     }
+    override func ZB_loadData() {
+        
+        self.dataViewModel?.ZB_loadData()
+    }
+    
+    
 }
