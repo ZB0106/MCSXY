@@ -36,12 +36,18 @@ class MCRequestTool: NSObject {
 //mark 请求
 extension MCRequestTool {
     
-    class func ZB_request(requestModelBlock :RequestModelBlock, requestHandel :HandelerDataBlock<Any>) -> Void {
+    class func ZB_request(requestModelBlock :RequestModelBlock, requestHandel :@escaping HandelerDataBlock<Any>) -> Void {
         let requestModel = requestModelBlock()
         let urlString = requestModel.baseUrl + (requestModel.APIUrl ?? "")
         
         let dataRequest = defaultsessionManager.request(urlString, method: HTTPMethod.init(rawValue: requestModel.httpMethod)!, parameters: requestModel.paragram, headers: requestModel.httpHeader)
         dataRequest.responseData { (response) in
+            guard let value = response.result.value else {
+                
+                return
+            }
+            
+            switch 
             
         }
     }

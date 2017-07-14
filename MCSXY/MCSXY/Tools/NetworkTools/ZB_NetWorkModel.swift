@@ -8,18 +8,43 @@
 
 import UIKit
 
+
+
 class ZB_NetWorkModel: NSObject {
 
+    
+    enum ShowLoading {
+        case customLoadingView
+        case refreshView
+        case activityView
+        case NotShowLoding
+    }
+    
+    enum UseCache {
+        case memoryCache
+        case diskCache
+        case all
+        case notAllowed
+    }
+    
+    enum RequetHandel {
+        case retry
+        case avoidRetry
+        case notHandel
+    }
+
+    
     var paragram :Dictionary<String,Any>?
     var isNeedWIFI :Bool = false
-    var isCache :Bool = false
-    var isShowLoading :Bool = false
-    var isNeedRetry :Bool = false
+    var isCache :UseCache = .notAllowed
+    var isShowLoading :ShowLoading = .NotShowLoding
+    var isNeedRetry :RequetHandel = .notHandel
     var baseUrl :String = MiaoCaiBaseUrl
     var APIUrl :String?
-   fileprivate(set) var httpHeader :Dictionary<String,String>?
-    var httpMethod :String = "POST"
     
+    var httpHeader :Dictionary<String,String> = MCUser.isLogin() ? ["afa":"ff"] : ["faf":"fddsa"]
+
+    var httpMethod :String = "POST"
 }
 
 class MCLiveRequestModel: ZB_NetWorkModel {

@@ -28,7 +28,6 @@
 		214FB5411F15CC9000FEC84F /* MCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52A1F15CC9000FEC84F /* MCTabBarController.swift */; };
 		214FB5421F15CC9000FEC84F /* MCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52B1F15CC9000FEC84F /* MCTableViewController.swift */; };
 		214FB5431F15CC9000FEC84F /* MCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52C1F15CC9000FEC84F /* MCViewController.swift */; };
-		214FB5441F15CC9000FEC84F /* MCTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52E1F15CC9000FEC84F /* MCTableViewInfo.swift */; };
 		214FB5451F15CC9000FEC84F /* ZB_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB52F1F15CC9000FEC84F /* ZB_ViewModel.swift */; };
 		214FB5461F15CC9000FEC84F /* ZB_CommonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5301F15CC9000FEC84F /* ZB_CommonModels.swift */; };
 		214FB5471F15CC9000FEC84F /* ZB_EventManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5311F15CC9000FEC84F /* ZB_EventManagerModel.swift */; };
@@ -42,6 +41,9 @@
 		214FB5501F15CC9000FEC84F /* ZB_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53C1F15CC9000FEC84F /* ZB_View.swift */; };
 		214FB5511F15CC9000FEC84F /* ZB_BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */; };
 		214FB5531F15E26600FEC84F /* ZB_TableViewManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5521F15E26600FEC84F /* ZB_TableViewManagerModel.swift */; };
+		217778CC1F186FEF00E8F629 /* MCBaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */; };
+		217778CE1F18701400E8F629 /* MCTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778CD1F18701400E8F629 /* MCTableViewInfo.swift */; };
+		217778D21F18D3BE00E8F629 /* MCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778D11F18D3BE00E8F629 /* MCUser.swift */; };
 		21814FBB1EF3CCD500681F73 /* MCSXYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21814FBA1EF3CCD500681F73 /* MCSXYTests.swift */; };
 		21814FC61EF3CCD500681F73 /* MCSXYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21814FC51EF3CCD500681F73 /* MCSXYUITests.swift */; };
 		21814FD41EF3CD2B00681F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21814FD31EF3CD2B00681F73 /* Assets.xcassets */; };
@@ -107,7 +109,6 @@
 		214FB52A1F15CC9000FEC84F /* MCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTabBarController.swift; sourceTree = "<group>"; };
 		214FB52B1F15CC9000FEC84F /* MCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewController.swift; sourceTree = "<group>"; };
 		214FB52C1F15CC9000FEC84F /* MCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCViewController.swift; sourceTree = "<group>"; };
-		214FB52E1F15CC9000FEC84F /* MCTableViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCTableViewInfo.swift; path = BaseModel/MCTableViewInfo.swift; sourceTree = "<group>"; };
 		214FB52F1F15CC9000FEC84F /* ZB_ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_ViewModel.swift; sourceTree = "<group>"; };
 		214FB5301F15CC9000FEC84F /* ZB_CommonModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_CommonModels.swift; sourceTree = "<group>"; };
 		214FB5311F15CC9000FEC84F /* ZB_EventManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_EventManagerModel.swift; sourceTree = "<group>"; };
@@ -121,6 +122,9 @@
 		214FB53C1F15CC9000FEC84F /* ZB_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_View.swift; sourceTree = "<group>"; };
 		214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_BaseTableView.swift; sourceTree = "<group>"; };
 		214FB5521F15E26600FEC84F /* ZB_TableViewManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_TableViewManagerModel.swift; sourceTree = "<group>"; };
+		217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCBaseListModel.swift; sourceTree = "<group>"; };
+		217778CD1F18701400E8F629 /* MCTableViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewInfo.swift; sourceTree = "<group>"; };
+		217778D11F18D3BE00E8F629 /* MCUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCUser.swift; sourceTree = "<group>"; };
 		21814FA21EF3CCD400681F73 /* MCSXY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCSXY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21814FB11EF3CCD400681F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21814FB61EF3CCD500681F73 /* MCSXYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCSXYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +222,7 @@
 		214FB52D1F15CC9000FEC84F /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */,
 				214FB52F1F15CC9000FEC84F /* ZB_ViewModel.swift */,
 				214FB5301F15CC9000FEC84F /* ZB_CommonModels.swift */,
 				214FB5311F15CC9000FEC84F /* ZB_EventManagerModel.swift */,
@@ -325,7 +330,7 @@
 				214FB5331F15CC9000FEC84F /* BaseProtol */,
 				214FB5391F15CC9000FEC84F /* BaseView */,
 				211415CE1F1702EC00836C71 /* MCMVVMInfos.swift */,
-				214FB52E1F15CC9000FEC84F /* MCTableViewInfo.swift */,
+				217778CD1F18701400E8F629 /* MCTableViewInfo.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1181,6 +1186,7 @@
 		2181503F1EF3D97900681F73 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				217778D11F18D3BE00E8F629 /* MCUser.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -1439,9 +1445,11 @@
 				211415D31F17138800836C71 /* ZB_TableViewModel.swift in Sources */,
 				214FB53E1F15CC9000FEC84F /* MCCollectionViewController.swift in Sources */,
 				219F19711EF7A87E008D013B /* MCVideoController.swift in Sources */,
+				217778D21F18D3BE00E8F629 /* MCUser.swift in Sources */,
 				2118BD931F16030F00ADEF04 /* MCLiveDataViewModel.swift in Sources */,
 				213DE8841EFBB88500D49B3C /* MCRequestTool.swift in Sources */,
-				214FB5441F15CC9000FEC84F /* MCTableViewInfo.swift in Sources */,
+				217778CE1F18701400E8F629 /* MCTableViewInfo.swift in Sources */,
+				217778CC1F186FEF00E8F629 /* MCBaseListModel.swift in Sources */,
 				219F19751EF7AC52008D013B /* MCLiveController.swift in Sources */,
 				2130C09C1EFA399A00492DD8 /* RHUserDefaults.swift in Sources */,
 				214FB5411F15CC9000FEC84F /* MCTabBarController.swift in Sources */,
