@@ -8,12 +8,11 @@
 
 import Foundation
 
-public typealias HandelerDataBlock<T> = (_ ZB_data :T) -> Void
 
 
 @objc public protocol ZB_FetchDataProtocol :NSObjectProtocol{
     
-    @objc optional func ZB_loadData(dataHandeler :HandelerDataBlock<Any>?) -> Void
+    @objc optional func ZB_loadData(dataHandeler :HandelerDataBlock<Any>?, failureHandeler :handelerFailureBlock?) -> Void
     
     @objc optional func ZB_loadData() -> Void
 }

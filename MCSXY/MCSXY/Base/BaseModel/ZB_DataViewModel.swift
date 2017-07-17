@@ -23,12 +23,15 @@ class ZB_DataViewModel: NSObject, ZB_FetchDataProtocol, ZB_ViewModelProtocol {
         if let relCls = NSClassFromString(cls!) as? ZB_ViewModel.Type {
             self.viewModel = relCls.init()
             viewModel?.dataView = self.dataView
-            self.ZB_loadData { (value) in
+            self.ZB_loadData(dataHandeler: { (value) in
                 self.viewModel? .ZB_ConfigurationWithData(ZB_Data:value)
-            }
+            }, failureHandeler: { (error) in
+                
+            })
         }
     }
-    func ZB_loadData(dataHandeler: HandelerDataBlock<Any>?) {
+    func ZB_loadData(dataHandeler: ((Any) -> Void)?, failureHandeler: handelerFailureBlock?) {
         
     }
+
 }

@@ -9,6 +9,9 @@ pod "SDWebImage"
 pod "YYKit"
 pod "DZNEmptyDataSet”
 pod "Alamofire"
-pod “Realm”
+pod "Realm"
+pod "SwiftyJSON"
+pod "SnapKit"
+
 
 end

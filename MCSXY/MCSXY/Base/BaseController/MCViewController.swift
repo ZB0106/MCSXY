@@ -13,7 +13,7 @@ public class MCViewController: UIViewController {
     var viewModelManager :ZB_ViewManagerModel?
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = Color_White
         #if DEBUG
             ZB_FPSLabel.show()
         #endif

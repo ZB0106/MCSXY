@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class ZB_NetWorkModel: NSObject {
+public class ZB_NetWorkModel {
 
     
     enum ShowLoading {
@@ -41,15 +41,23 @@ class ZB_NetWorkModel: NSObject {
     var isNeedRetry :RequetHandel = .notHandel
     var baseUrl :String = MiaoCaiBaseUrl
     var APIUrl :String?
+    var alertString :String?
     
     var httpHeader :Dictionary<String,String> = MCUser.isLogin() ? ["afa":"ff"] : ["faf":"fddsa"]
 
     var httpMethod :String = "POST"
 }
 
-class MCLiveRequestModel: ZB_NetWorkModel {
+public class MCLiveWillRequestModel: ZB_NetWorkModel {
     override init() {
         super.init()
         self.APIUrl = API_LiveList
+    }
+}
+
+public class MCLivePreRequestModel :ZB_NetWorkModel {
+    override init() {
+        super.init()
+        self.APIUrl = API_VideoList
     }
 }

@@ -11,10 +11,10 @@
 		211415D11F170B9B00836C71 /* ZB_DataTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211415D01F170B9B00836C71 /* ZB_DataTableViewModel.swift */; };
 		211415D31F17138800836C71 /* ZB_TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211415D21F17138800836C71 /* ZB_TableViewModel.swift */; };
 		211415D71F17599A00836C71 /* APIHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211415D61F17599A00836C71 /* APIHeaders.swift */; };
-		2118BD8A1F15F00000ADEF04 /* MCLiveViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD891F15F00000ADEF04 /* MCLiveViewManager.swift */; };
+		2118BD8A1F15F00000ADEF04 /* MCLiveWillViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD891F15F00000ADEF04 /* MCLiveWillViewManager.swift */; };
 		2118BD8E1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD8D1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift */; };
 		2118BD901F15FDB200ADEF04 /* ZB_DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD8F1F15FDB200ADEF04 /* ZB_DataViewModel.swift */; };
-		2118BD931F16030F00ADEF04 /* MCLiveDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD921F16030F00ADEF04 /* MCLiveDataViewModel.swift */; };
+		2118BD931F16030F00ADEF04 /* MCLiveWillDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD921F16030F00ADEF04 /* MCLiveWillDataViewModel.swift */; };
 		2118BD951F16177300ADEF04 /* ZB_NetWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118BD941F16177300ADEF04 /* ZB_NetWorkModel.swift */; };
 		2130BFD41EF9FFE100492DD8 /* guidesBuddle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2130BFD31EF9FFE100492DD8 /* guidesBuddle.bundle */; };
 		2130C0981EFA0E7000492DD8 /* ClassMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130C0971EFA0E7000492DD8 /* ClassMacro.swift */; };
@@ -41,6 +41,13 @@
 		214FB5501F15CC9000FEC84F /* ZB_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53C1F15CC9000FEC84F /* ZB_View.swift */; };
 		214FB5511F15CC9000FEC84F /* ZB_BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */; };
 		214FB5531F15E26600FEC84F /* ZB_TableViewManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FB5521F15E26600FEC84F /* ZB_TableViewManagerModel.swift */; };
+		215FFB871F1C6BA800158410 /* MCPreLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB861F1C6BA800158410 /* MCPreLiveViewController.swift */; };
+		215FFB891F1C6C8000158410 /* MCWillLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB881F1C6C8000158410 /* MCWillLiveViewController.swift */; };
+		215FFB8B1F1C83C600158410 /* MCLivePickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB8A1F1C83C600158410 /* MCLivePickView.swift */; };
+		215FFB8E1F1C8DBF00158410 /* RHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB8D1F1C8DBF00158410 /* RHButton.swift */; };
+		215FFB901F1CAE5B00158410 /* MCLivePreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB8F1F1CAE5B00158410 /* MCLivePreViewModel.swift */; };
+		215FFB921F1CAE7200158410 /* MCLivePreViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB911F1CAE7200158410 /* MCLivePreViewManager.swift */; };
+		215FFB941F1CAE9900158410 /* MCLivePreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB931F1CAE9900158410 /* MCLivePreDataViewModel.swift */; };
 		217778CC1F186FEF00E8F629 /* MCBaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */; };
 		217778CE1F18701400E8F629 /* MCTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778CD1F18701400E8F629 /* MCTableViewInfo.swift */; };
 		217778D21F18D3BE00E8F629 /* MCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778D11F18D3BE00E8F629 /* MCUser.swift */; };
@@ -62,7 +69,7 @@
 		219F19751EF7AC52008D013B /* MCLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F19741EF7AC52008D013B /* MCLiveController.swift */; };
 		21A13ED31F13271400138B98 /* UIView + ZB_Categery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13ED21F13271400138B98 /* UIView + ZB_Categery.swift */; };
 		21A13EE21F13745000138B98 /* MCLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13EE11F13745000138B98 /* MCLiveCell.swift */; };
-		21A13EE41F13792000138B98 /* MCLiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13EE31F13792000138B98 /* MCLiveViewModel.swift */; };
+		21A13EE41F13792000138B98 /* MCLiveWillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A13EE31F13792000138B98 /* MCLiveWillViewModel.swift */; };
 		21DAB1B61EFCCA2600438D11 /* MCToolFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DAB1B51EFCCA2600438D11 /* MCToolFunc.swift */; };
 		3B673E601F13CC3400171BE2 /* NSObject + ZB_ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B673E5F1F13CC3400171BE2 /* NSObject + ZB_ClassName.swift */; };
 		AFBABE734B84FF753200BDAE /* Pods_MCSXY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D450F5DFF30BA99C7309B8 /* Pods_MCSXY.framework */; };
@@ -91,10 +98,10 @@
 		211415D01F170B9B00836C71 /* ZB_DataTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_DataTableViewModel.swift; sourceTree = "<group>"; };
 		211415D21F17138800836C71 /* ZB_TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_TableViewModel.swift; sourceTree = "<group>"; };
 		211415D61F17599A00836C71 /* APIHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHeaders.swift; sourceTree = "<group>"; };
-		2118BD891F15F00000ADEF04 /* MCLiveViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveViewManager.swift; sourceTree = "<group>"; };
+		2118BD891F15F00000ADEF04 /* MCLiveWillViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveWillViewManager.swift; sourceTree = "<group>"; };
 		2118BD8D1F15F8E100ADEF04 /* ZB_FetchDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_FetchDataProtocol.swift; sourceTree = "<group>"; };
 		2118BD8F1F15FDB200ADEF04 /* ZB_DataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_DataViewModel.swift; sourceTree = "<group>"; };
-		2118BD921F16030F00ADEF04 /* MCLiveDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveDataViewModel.swift; sourceTree = "<group>"; };
+		2118BD921F16030F00ADEF04 /* MCLiveWillDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveWillDataViewModel.swift; sourceTree = "<group>"; };
 		2118BD941F16177300ADEF04 /* ZB_NetWorkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_NetWorkModel.swift; sourceTree = "<group>"; };
 		2130BFD31EF9FFE100492DD8 /* guidesBuddle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = guidesBuddle.bundle; sourceTree = "<group>"; };
 		2130C0961EFA0C2200492DD8 /* Header-Swift-OC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Swift-OC.h"; sourceTree = "<group>"; };
@@ -122,6 +129,13 @@
 		214FB53C1F15CC9000FEC84F /* ZB_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_View.swift; sourceTree = "<group>"; };
 		214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_BaseTableView.swift; sourceTree = "<group>"; };
 		214FB5521F15E26600FEC84F /* ZB_TableViewManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_TableViewManagerModel.swift; sourceTree = "<group>"; };
+		215FFB861F1C6BA800158410 /* MCPreLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCPreLiveViewController.swift; sourceTree = "<group>"; };
+		215FFB881F1C6C8000158410 /* MCWillLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCWillLiveViewController.swift; sourceTree = "<group>"; };
+		215FFB8A1F1C83C600158410 /* MCLivePickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLivePickView.swift; sourceTree = "<group>"; };
+		215FFB8D1F1C8DBF00158410 /* RHButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHButton.swift; sourceTree = "<group>"; };
+		215FFB8F1F1CAE5B00158410 /* MCLivePreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLivePreViewModel.swift; sourceTree = "<group>"; };
+		215FFB911F1CAE7200158410 /* MCLivePreViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLivePreViewManager.swift; sourceTree = "<group>"; };
+		215FFB931F1CAE9900158410 /* MCLivePreDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLivePreDataViewModel.swift; sourceTree = "<group>"; };
 		217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCBaseListModel.swift; sourceTree = "<group>"; };
 		217778CD1F18701400E8F629 /* MCTableViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewInfo.swift; sourceTree = "<group>"; };
 		217778D11F18D3BE00E8F629 /* MCUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCUser.swift; sourceTree = "<group>"; };
@@ -149,7 +163,7 @@
 		219F19741EF7AC52008D013B /* MCLiveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveController.swift; sourceTree = "<group>"; };
 		21A13ED21F13271400138B98 /* UIView + ZB_Categery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + ZB_Categery.swift"; sourceTree = "<group>"; };
 		21A13EE11F13745000138B98 /* MCLiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveCell.swift; sourceTree = "<group>"; };
-		21A13EE31F13792000138B98 /* MCLiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveViewModel.swift; sourceTree = "<group>"; };
+		21A13EE31F13792000138B98 /* MCLiveWillViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLiveWillViewModel.swift; sourceTree = "<group>"; };
 		21DAB1B51EFCCA2600438D11 /* MCToolFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCToolFunc.swift; sourceTree = "<group>"; };
 		3B673E5F1F13CC3400171BE2 /* NSObject + ZB_ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject + ZB_ClassName.swift"; sourceTree = "<group>"; };
 		751458C88F9ABDD171C595ED /* Pods-MCSXY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCSXY.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCSXY/Pods-MCSXY.release.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +270,14 @@
 				214FB53D1F15CC9000FEC84F /* ZB_BaseTableView.swift */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		215FFB8C1F1C864000158410 /* RHFactory */ = {
+			isa = PBXGroup;
+			children = (
+				215FFB8D1F1C8DBF00158410 /* RHButton.swift */,
+			);
+			path = RHFactory;
 			sourceTree = "<group>";
 		};
 		21814F991EF3CCD400681F73 = {
@@ -484,6 +506,8 @@
 			isa = PBXGroup;
 			children = (
 				219F19741EF7AC52008D013B /* MCLiveController.swift */,
+				215FFB861F1C6BA800158410 /* MCPreLiveViewController.swift */,
+				215FFB881F1C6C8000158410 /* MCWillLiveViewController.swift */,
 			);
 			path = Cotrollers;
 			sourceTree = "<group>";
@@ -498,9 +522,12 @@
 		21814FE91EF3D97900681F73 /* VIewModels */ = {
 			isa = PBXGroup;
 			children = (
-				21A13EE31F13792000138B98 /* MCLiveViewModel.swift */,
-				2118BD891F15F00000ADEF04 /* MCLiveViewManager.swift */,
-				2118BD921F16030F00ADEF04 /* MCLiveDataViewModel.swift */,
+				21A13EE31F13792000138B98 /* MCLiveWillViewModel.swift */,
+				2118BD891F15F00000ADEF04 /* MCLiveWillViewManager.swift */,
+				2118BD921F16030F00ADEF04 /* MCLiveWillDataViewModel.swift */,
+				215FFB8F1F1CAE5B00158410 /* MCLivePreViewModel.swift */,
+				215FFB911F1CAE7200158410 /* MCLivePreViewManager.swift */,
+				215FFB931F1CAE9900158410 /* MCLivePreDataViewModel.swift */,
 			);
 			path = VIewModels;
 			sourceTree = "<group>";
@@ -509,6 +536,7 @@
 			isa = PBXGroup;
 			children = (
 				21A13EE11F13745000138B98 /* MCLiveCell.swift */,
+				215FFB8A1F1C83C600158410 /* MCLivePickView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1157,6 +1185,7 @@
 		2181503C1EF3D97900681F73 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				215FFB8C1F1C864000158410 /* RHFactory */,
 				21881B591F146C6B00BBC21E /* UnitsComponnents */,
 				2130BFED1EFA0A6800492DD8 /* RHCustom */,
 				2181503D1EF3D97900681F73 /* Category */,
@@ -1422,19 +1451,23 @@
 				2130C0981EFA0E7000492DD8 /* ClassMacro.swift in Sources */,
 				211415D71F17599A00836C71 /* APIHeaders.swift in Sources */,
 				214FB5461F15CC9000FEC84F /* ZB_CommonModels.swift in Sources */,
-				21A13EE41F13792000138B98 /* MCLiveViewModel.swift in Sources */,
+				21A13EE41F13792000138B98 /* MCLiveWillViewModel.swift in Sources */,
 				214FB5491F15CC9000FEC84F /* ZB_UIProtocol.swift in Sources */,
 				214FB5431F15CC9000FEC84F /* MCViewController.swift in Sources */,
 				218150421EF3DA6800681F73 /* UtilsMacro.swift in Sources */,
-				2118BD8A1F15F00000ADEF04 /* MCLiveViewManager.swift in Sources */,
+				215FFB871F1C6BA800158410 /* MCPreLiveViewController.swift in Sources */,
+				2118BD8A1F15F00000ADEF04 /* MCLiveWillViewManager.swift in Sources */,
+				215FFB8E1F1C8DBF00158410 /* RHButton.swift in Sources */,
 				211415D11F170B9B00836C71 /* ZB_DataTableViewModel.swift in Sources */,
 				219F196F1EF7A852008D013B /* MCMineController.swift in Sources */,
 				214FB54B1F15CC9000FEC84F /* ZB_BindingProtocol.swift in Sources */,
 				219F19691EF7A808008D013B /* MCHomeController.swift in Sources */,
 				214FB5401F15CC9000FEC84F /* MCNavigationController.swift in Sources */,
+				215FFB941F1CAE9900158410 /* MCLivePreDataViewModel.swift in Sources */,
 				2118BD951F16177300ADEF04 /* ZB_NetWorkModel.swift in Sources */,
 				214FB54E1F15CC9000FEC84F /* ZB_CollectionCell.swift in Sources */,
 				214FB5251F15CC7A00FEC84F /* MCGuideController.swift in Sources */,
+				215FFB921F1CAE7200158410 /* MCLivePreViewManager.swift in Sources */,
 				214FB5501F15CC9000FEC84F /* ZB_View.swift in Sources */,
 				3B673E601F13CC3400171BE2 /* NSObject + ZB_ClassName.swift in Sources */,
 				211415CF1F1702EC00836C71 /* MCMVVMInfos.swift in Sources */,
@@ -1446,10 +1479,12 @@
 				214FB53E1F15CC9000FEC84F /* MCCollectionViewController.swift in Sources */,
 				219F19711EF7A87E008D013B /* MCVideoController.swift in Sources */,
 				217778D21F18D3BE00E8F629 /* MCUser.swift in Sources */,
-				2118BD931F16030F00ADEF04 /* MCLiveDataViewModel.swift in Sources */,
+				2118BD931F16030F00ADEF04 /* MCLiveWillDataViewModel.swift in Sources */,
 				213DE8841EFBB88500D49B3C /* MCRequestTool.swift in Sources */,
+				215FFB901F1CAE5B00158410 /* MCLivePreViewModel.swift in Sources */,
 				217778CE1F18701400E8F629 /* MCTableViewInfo.swift in Sources */,
 				217778CC1F186FEF00E8F629 /* MCBaseListModel.swift in Sources */,
+				215FFB8B1F1C83C600158410 /* MCLivePickView.swift in Sources */,
 				219F19751EF7AC52008D013B /* MCLiveController.swift in Sources */,
 				2130C09C1EFA399A00492DD8 /* RHUserDefaults.swift in Sources */,
 				214FB5411F15CC9000FEC84F /* MCTabBarController.swift in Sources */,
@@ -1460,6 +1495,7 @@
 				214FB5511F15CC9000FEC84F /* ZB_BaseTableView.swift in Sources */,
 				2118BD901F15FDB200ADEF04 /* ZB_DataViewModel.swift in Sources */,
 				214FB5471F15CC9000FEC84F /* ZB_EventManagerModel.swift in Sources */,
+				215FFB891F1C6C8000158410 /* MCWillLiveViewController.swift in Sources */,
 				214FB54D1F15CC9000FEC84F /* ZB_ConfigurationDataProtocol.swift in Sources */,
 				214FB5451F15CC9000FEC84F /* ZB_ViewModel.swift in Sources */,
 				214FB54A1F15CC9000FEC84F /* ZB_ViewModelProtocol.swift in Sources */,

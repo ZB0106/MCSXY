@@ -12,6 +12,8 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -24,6 +26,8 @@ DEPENDENCIES:
   - MJRefresh
   - Realm
   - SDWebImage
+  - SnapKit
+  - SwiftyJSON
   - YYKit
 
 SPEC CHECKSUMS:
@@ -34,8 +38,10 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: dd5fa21cc8257941f95a9fc3b38ca464a3780e1f
+PODFILE CHECKSUM: c1bd2508e82b8eaa9aa4adc9626f4fa4bc654755
 
 COCOAPODS: 1.2.1

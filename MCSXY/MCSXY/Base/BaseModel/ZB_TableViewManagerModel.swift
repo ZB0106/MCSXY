@@ -15,7 +15,12 @@ class ZB_TableViewManagerModel: ZB_ViewManagerModel {
     
     override func makeConstraintsForUI() {
         super.makeConstraintsForUI()
-        self.tableView?.frame = CGRect.init(x: 0, y: 0, width: (self.viewController?.view.zb_width!)!, height: (self.viewController?.view.zb_height!)!)
+        self.tableView?.snp.makeConstraints({ (make) in
+            make.right.equalTo(0)
+            make.left.equalTo(0)
+            make.top.equalTo(0)
+            make.height.equalTo(0)
+        }) 
     }
     
     override func addSubViews() {

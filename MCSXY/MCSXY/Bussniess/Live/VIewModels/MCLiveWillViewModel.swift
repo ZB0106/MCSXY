@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MCLiveViewModel: ZB_TableViewModel {
+class MCLiveWillViewModel: ZB_TableViewModel {
 
     
 }
