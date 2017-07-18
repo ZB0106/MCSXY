@@ -10,25 +10,36 @@ import UIKit
 
 class RHButton: UIButton {
 
-    class func button(title :String, selectedTitle :String, titleColor :UIColor, selectedTitleColor :UIColor, tag :Int, font :UIFont, target: Any, action: Selector) -> Self{
+    class func button(frame :CGRect? = CGRect.zero, title :String? = nil, selectedTitle :String? = nil, titleColor :UIColor? = nil, selectedTitleColor :UIColor? = nil, tag :Int? = nil, font :UIFont? = nil, target: Any? = nil, action: Selector? = nil) -> RHButton{
+        let button = RHButton.init()
+        if let frame = frame {
+            button.frame = frame
+        }
+        if let font = font {
+            button.titleLabel?.font = font
+        }
+        if let titleColor = titleColor {
+             button.setTitleColor(titleColor, for:UIControlState.normal)
+        }
+        if let selectedTitleColor = selectedTitleColor {
+            button.setTitleColor(selectedTitleColor, for:UIControlState.selected)
+        }
+        if let tag = tag {
+            button.tag = tag
+        }
         
-       return self .button(frame: CGRect.zero, title: title, selectedTitle: selectedTitle, titleColor: titleColor, selectedTitleColor: selectedTitleColor, tag: tag, font: font, target: target, action: action)
-    }
-    
-    
-    class func button(frame :CGRect, title :String, selectedTitle :String, titleColor :UIColor, selectedTitleColor :UIColor, tag :Int, font :UIFont, target: Any, action: Selector) -> Self{
-        let button = self.init()
-        button.frame = frame;
-        button.tag = tag
-        button.titleLabel?.font = font
-        button.setTitle(title, for:UIControlState.normal)
-        button.setTitle(selectedTitle, for:UIControlState.selected)
-        button.setTitleColor(titleColor, for:UIControlState.normal)
-        button.setTitleColor(selectedTitleColor, for:UIControlState.selected)
-        button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
-        return button;
+        if let title = title {
+            button.setTitle(title, for:UIControlState.normal)
+        }
 
-        
+        if let selectedTitle = selectedTitle {
+             button.setTitle(selectedTitle, for:UIControlState.selected)
+        }
+
+        if let target = target, let action = action {
+            button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        }
+        return button;
     }
 
     

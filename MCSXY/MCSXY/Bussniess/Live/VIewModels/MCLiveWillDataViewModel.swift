@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class MCLiveWillDataViewModel: ZB_DataTableViewModel {
 
@@ -20,7 +21,20 @@ class MCLiveWillDataViewModel: ZB_DataTableViewModel {
         }, requestHandel: { (json) in
             
             if let dataHandeler = dataHandeler {
-                dataHandeler(json)
+                
+                if let json = json as? JSON {
+                    let array = json["data"]["page"].arrayValue
+                    var arrayM :Array<JSON> = []
+                    for json in array{
+                        var jsM = json
+                        jsM[cellHeight] = 110.0
+                        arrayM .append(jsM)
+                    }
+                    
+                    let jsonArray :JSON = [[headerHeight:0.01, footerHeight:0.01, cellDataArray:arrayM]]
+                    dataHandeler(jsonArray.arrayValue)
+                }
+
             }
             
         }) { (error) in

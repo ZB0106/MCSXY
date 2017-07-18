@@ -14,7 +14,6 @@ class MCWillLiveViewController: MCTableViewController {
         super.viewDidLoad()
 
         self.viewModelManager?.ZB_loadData()
-        self.view.backgroundColor = Color_Red
     }
 
     override func didReceiveMemoryWarning() {

@@ -79,3 +79,8 @@ let Color_Blue       =  UIColor.blue
 let Color_Orange     =  UIColor.orange
 let Color_Yellow     =  UIColor.orange
 
+// MARK: -Cell相关
+let cellHeight = "cellHeight"
+let headerHeight = "headerHeight"
+let footerHeight = "footerHeight"
+let cellDataArray = "cellDataArray"

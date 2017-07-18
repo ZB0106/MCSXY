@@ -9,6 +9,7 @@
 import UIKit
 
 class MCLiveWillViewManager: ZB_TableViewManagerModel {
-
-    
+    override func addSubViews() {
+        super.addSubViews()
+    }
 }

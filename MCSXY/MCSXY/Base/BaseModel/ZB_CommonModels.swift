@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 class ZB_CommonBaseModel: NSObject {
-    var cellHeight :CGFloat?
+    var cellHeight :CGFloat = 44.0
 }
 
 class ZB_SectionBaseModel:NSObject {
-    var sectionHeight :CGFloat?
+    var sectionHeight :CGFloat = 0.1
+    var sectionFooterHeight :CGFloat = 0.1
     var cellsDataArray :Array<Any>?
-    var sectionModel :ZB_CommonBaseModel?
 }
 
 class SysSubject: NSObject {

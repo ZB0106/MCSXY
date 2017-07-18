@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class MCLiveCell: MCTableViewCell {
 
-    var iconView :UIImageView?
-    var nameLabel :UIImageView?
-    var timeLabel :UIImageView?
-    var ceshiView :UIImageView?
-    var touxiangView :UIImageView?
+    var image_icon :RHImageView?
+    var image_priceType :RHImageView?
+    var lab_title :RHLabel?
+    var lab_learnCount :RHLabel?
+    var lab_learnTime :RHLabel?
+    var lab_teacher :RHLabel?
     
     
     
@@ -22,84 +24,95 @@ class MCLiveCell: MCTableViewCell {
 
 extension MCLiveCell{
     override func addSubViews() {
-        self.iconView = UIImageView.init()
-        self.contentView .addSubview(self.iconView!)
-        self.iconView?.backgroundColor = UIColor.lightGray
+        image_priceType = RHImageView.imageView()
+        image_icon = RHImageView()
+        image_icon?.addSubview(image_priceType!)
+        contentView.addSubview(image_icon!)
         
+        lab_title = RHLabel.label(font: H15, textColor: Color_RGB(r: 77, g: 77, b: 77), numberOfLines: 2)
+        contentView.addSubview(lab_title!)
         
-        self.ceshiView = UIImageView.init()
-        self.contentView .addSubview(self.ceshiView!)
-        self.ceshiView?.backgroundColor = UIColor.lightGray
-       
-        self.touxiangView = UIImageView.init()
-        self.contentView .addSubview(self.touxiangView!)
-        self.touxiangView?.backgroundColor = UIColor.lightGray
+        lab_learnCount = RHLabel.label(font: H12, textColor: Color_RGB(r: 128, g: 128, b: 128), textAlignment: .right)
+        contentView.addSubview(lab_learnCount!)
         
-        self.nameLabel = UIImageView.init()
-        self.contentView .addSubview(self.nameLabel!)
-        self.nameLabel?.backgroundColor = UIColor.lightGray
+        lab_learnTime = RHLabel.label(font: H12, textColor: Color_RGB(r: 128, g: 128, b: 128))
+        contentView.addSubview(lab_learnTime!)
         
-        self.timeLabel = UIImageView.init()
-        self.contentView .addSubview(self.timeLabel!)
-        self.timeLabel?.backgroundColor = UIColor.lightGray
-
-        
-       
-        
-        self.iconView?.layer.cornerRadius = 15.0
-        self.iconView?.layer.masksToBounds = true
-        self.touxiangView?.layer.cornerRadius = 15.0
-        self.touxiangView?.layer.masksToBounds = true
-        self.ceshiView?.layer.cornerRadius = 15.0
-        self.ceshiView?.layer.masksToBounds = true
-        self.timeLabel?.layer.cornerRadius = 15.0
-        self.timeLabel?.layer.masksToBounds = true
-        self.nameLabel?.layer.cornerRadius = 15.0
-        self.nameLabel?.layer.masksToBounds = true
-
-//        self.nameLabel = UILabel.init()
-//        self.nameLabel?.text = "ceshi"
-//        self.nameLabel?.backgroundColor = UIColor.lightGray
-//        self.contentView .addSubview(self.nameLabel!)
-//        self.nameLabel?.layer.cornerRadius = 15.0
-//        self.nameLabel?.layer.masksToBounds = true
-//        
-//        
-//        self.timeLabel = UILabel.init()
-//        self.timeLabel?.text = "20170107"
-//        self.timeLabel?.backgroundColor = UIColor.yellow
-//        self.contentView .addSubview(self.timeLabel!)
-        
+        lab_teacher = RHLabel.label(font: H12, textColor: Color_RGB(r: 128, g: 128, b: 128))
+        contentView.addSubview(lab_teacher!)
         
     }
     
     override func makeConstraintsForUI() {
-        self.iconView?.frame = CGRect.init(x: 0, y: 0, width: 44, height: 44)
-        self.ceshiView?.frame = CGRect.init(x: 64, y: 0, width: 44, height: 44)
-        self.touxiangView?.frame = CGRect.init(x: 128, y: 0, width: 44, height: 44)
-        self.nameLabel?.frame = CGRect.init(x: 190, y: 0, width: 50, height: 44)
-        self.timeLabel?.frame = CGRect.init(x: 260, y: 0, width: 80, height: 44)
+        image_icon?.snp.makeConstraints({ (make) in
+            make.size.equalTo(CGSize.init(width: 120, height: 80))
+            make.left.equalTo(15)
+            make.top.equalTo(15)
+        })
         
-        
-        
+        image_priceType?.snp.makeConstraints({ (make) in
+            make.size.equalTo(CGSize.init(width: 30, height: 30))
+            make.left.equalTo(0)
+            make.top.equalTo(0)
+        })
+        lab_title?.snp.makeConstraints({ (make) in
+            make.top.equalTo((image_icon?.snp.top)!)
+            make.left.equalTo((image_icon?.snp.right)!).offset(10)
+            make.height.equalTo(40)
+            make.right.equalTo(-15)
+        })
+        lab_learnCount?.snp.makeConstraints({ (make) in
+            make.size.equalTo(CGSize.init(width: 75, height: 20))
+            make.bottom.equalTo((image_icon?.snp.bottom)!)
+            make.right.equalTo(-15)
+        })
+        lab_teacher?.snp.makeConstraints({ (make) in
+            make.height.equalTo(20);
+            make.bottom.equalTo((image_icon?.snp.bottom)!);
+            make.left.equalTo((lab_title?.snp.left)!);
+            make.right.equalTo((lab_learnCount?.snp.left)!).offset(-5);
+        })
+        lab_learnTime?.snp.makeConstraints({ (make) in
+            make.height.equalTo(20);
+            make.bottom.equalTo((lab_teacher?.snp.top)!);
+            make.left.equalTo((lab_title?.snp.left)!);
+            make.right.equalTo(-15);
+
+        })
     }
 }
 
 extension MCLiveCell{
-    override func ZB_ConfigurationWithData(ZB_Data: Any?) {
-        self.touxiangView?.image = UIImage.init(named: "18e58PICMwt_1024.jpg");
-        self.ceshiView?.image = UIImage.init(named: "57b2d98e109c6_1024.jpg")
-        self.iconView?.image = UIImage.init(named: "140-150F1142A0.jpg")
-        self.nameLabel?.image = UIImage.init(named: "160P3142450-4.jpg")
-        self.timeLabel?.image = UIImage.init(named: "timg-2.jpeg")
-        
-        
-        
-//        self.touxiangView?.image = (UIImage.init(named: "18e58PICMwt_1024.jpg"))?.ZB_Corner(corner: 15.0 ,drawRect: (self.touxiangView?.bounds)!)
-//        self.ceshiView?.image = (UIImage.init(named: "57b2d98e109c6_1024.jpg"))?.ZB_Corner(corner: 15.0 ,drawRect: (self.ceshiView?.bounds)!)
-//        self.iconView?.image = (UIImage.init(named: "140-150F1142A0.jpg"))?.ZB_Corner(corner: 15.0 ,drawRect: (self.iconView?.bounds)!)
-//        self.nameLabel?.image = (UIImage.init(named: "160P3142450-4.jpg"))?.ZB_Corner(corner: 15.0 ,drawRect: (self.nameLabel?.bounds)!)
-//        self.timeLabel?.image = (UIImage.init(named: "timg-2.jpeg"))?.ZB_Corner(corner: 15.0 ,drawRect: (self.timeLabel?.bounds)!)
-
+    override func ZB_ConfigurationWithData(jsonData: Any?) {
+        if let data = jsonData as? JSON {
+            lab_title?.text = data["name"].stringValue
+            lab_teacher?.text = data["eduTeacher"]["teacherName"].stringValue
+            
+            image_icon?.sd_setImage(with: NSURL.init(string: ImageUrl(url: data["logo"].stringValue))! as URL, placeholderImage: UIImage.init(named: "course_placeholder"), options: .retryFailed, completed: {
+                
+                [weak self] (image, error, cacheType, imageUrl) in
+                if error != nil {
+                    self?.image_icon?.image = UIImage.init(named: "course_failured_placeholder")
+                }
+                
+            })
+            if data["isPay"].intValue == 1 {
+                image_priceType?.image = UIImage.init(named: "course_free_sign")
+            } else {
+                image_priceType?.image = UIImage.init(named: "course_vip_sign")
+            }
+           
+//            let text = data["liveBeginTime"].stringValue
+//            let index = text.index(text.endIndex, offsetBy: -3)
+//            lab_learnTime?.text = text.substring(to: index) + "开播"
+            
+            let number = Double(data["lookCount"].intValue) / 10000.0
+            if number > 1.0 {
+                lab_learnCount?.text = String(format:"%.2f",arguments:[number])
+            } else {
+                lab_learnCount?.text = data["lookCount"].stringValue + "人报名"
+            }
+        }
+    
     }
 }

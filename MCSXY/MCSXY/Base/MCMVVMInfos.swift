@@ -9,12 +9,8 @@
 import Foundation
 
 let MC_ViewControllerMapManagerDict =
-                                    [NSObject.classNameAndSpaceName(className: "MCPreLiveViewController"):NSObject.classNameAndSpaceName(className: "MCLiveWillViewManager"),
-                                       NSObject.classNameAndSpaceName(className: "MCWillLiveViewController"):NSObject.classNameAndSpaceName(className: "MCLivePreViewManager")]
-
-let tableViewInfoDict =
-                                    [NSObject.classNameAndSpaceName(className: "MCLiveWillViewManager"):NSObject.classNameAndSpaceName(className: "MCLiveWillTableViewInfos"),
-                                    NSObject.classNameAndSpaceName(className: "MCLivePreViewManager"):NSObject.classNameAndSpaceName(className: "MCLivPreTableViewInfos")]
+                                    [NSObject.classNameAndSpaceName(className: "MCPreLiveViewController"):NSObject.classNameAndSpaceName(className: "MCLivePreViewManager"),
+                                       NSObject.classNameAndSpaceName(className: "MCWillLiveViewController"):NSObject.classNameAndSpaceName(className: "MCLiveWillViewManager")]
 
 let MC_ViewManagerInfos =
                                     [NSObject.classNameAndSpaceName(className: "MCLiveWillViewManager"):NSObject.classNameAndSpaceName(className: "MCLiveWillDataViewModel"),
@@ -24,3 +20,6 @@ let MC_DataViewModelInfos =
                                     [NSObject.classNameAndSpaceName(className: "MCLiveWillDataViewModel"):NSObject.classNameAndSpaceName(className: "MCLiveWillViewModel"),
                                      NSObject.classNameAndSpaceName(className: "MCLivePreDataViewModel"):NSObject.classNameAndSpaceName(className: "MCLivePreViewModel")]
 
+let tableViewInfoDict =
+    [NSObject.classNameAndSpaceName(className: "MCLiveWillViewManager"):NSObject.classNameAndSpaceName(className: "MCLiveTableViewInfos"),
+     NSObject.classNameAndSpaceName(className: "MCLivePreViewManager"):NSObject.classNameAndSpaceName(className: "MCVideoTableViewInfos")]

@@ -15,7 +15,7 @@ class ZB_ViewModel: NSObject,ZB_ViewModelProtocol, ZB_ConfigurationDataProtocol 
     }
    weak var dataView :UIView?
     var viewModelHandeler :HandelerBlock?
-    func ZB_ConfigurationWithData(ZB_Data: Any?) {
+    func ZB_ConfigurationWithData(jsonData: Any?) {
         
     }
 }

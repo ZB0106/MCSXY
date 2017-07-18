@@ -10,8 +10,8 @@ import UIKit
 
 class ZB_TableViewModel: ZB_ViewModel {
     
-    override func ZB_ConfigurationWithData(ZB_Data: Any?) {
+    override func ZB_ConfigurationWithData(jsonData: Any?) {
         let view = self.dataView as! ZB_BaseTableView
-        view.dataArray = ZB_Data as? Array
+        view.dataArray = jsonData as? Array
     }
 }

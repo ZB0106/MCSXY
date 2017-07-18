@@ -24,7 +24,7 @@ class ZB_DataViewModel: NSObject, ZB_FetchDataProtocol, ZB_ViewModelProtocol {
             self.viewModel = relCls.init()
             viewModel?.dataView = self.dataView
             self.ZB_loadData(dataHandeler: { (value) in
-                self.viewModel? .ZB_ConfigurationWithData(ZB_Data:value)
+                self.viewModel? .ZB_ConfigurationWithData(jsonData:value)
             }, failureHandeler: { (error) in
                 
             })

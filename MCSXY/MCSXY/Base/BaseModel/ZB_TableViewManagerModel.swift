@@ -19,7 +19,7 @@ class ZB_TableViewManagerModel: ZB_ViewManagerModel {
             make.right.equalTo(0)
             make.left.equalTo(0)
             make.top.equalTo(0)
-            make.height.equalTo(0)
+            make.bottom.equalTo(0)
         }) 
     }
     
@@ -31,6 +31,7 @@ class ZB_TableViewManagerModel: ZB_ViewManagerModel {
         
         self.tableView = ZB_BaseTableView.init(infoClass: tableViewInfo!)
         self.viewController?.view .addSubview(tableView!)
+        self.tableView?.backgroundColor = Color_White
     }
     
     override func ZB_bindingViewModelForView() {

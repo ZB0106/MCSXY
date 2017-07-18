@@ -23,7 +23,7 @@ public class MCTableViewCell: UITableViewCell {
 }
 
 extension MCTableViewCell : ZB_UIProtocol, ZB_ConfigurationDataProtocol{
-    public func ZB_ConfigurationWithData(ZB_Data: Any?) {
+    public func ZB_ConfigurationWithData(jsonData: Any?) {
         
     }
 

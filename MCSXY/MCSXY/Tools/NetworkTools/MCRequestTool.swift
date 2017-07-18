@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 typealias RequestModelBlock = () -> ZB_NetWorkModel
-public typealias HandelerDataBlock<T> = (_ ZB_data :T) -> Void
+public typealias HandelerDataBlock<T> = (_ jsonData :T) -> Void
 public typealias handelerFailureBlock = (_ failure :Error) -> Void
 
 fileprivate enum ZB_HttpMethod :String{

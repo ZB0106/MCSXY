@@ -26,7 +26,9 @@ let MiaoCaiBaseUrl = "http://app.miaocaiwang.com/MiaoCai/";
 // image base url
 let BaseImageUrl   = "http://app.miaocaiwang.com";
 
-
+func ImageUrl(url :String) -> String {
+    return BaseImageUrl + url
+}
 
 
 // 验证验证码

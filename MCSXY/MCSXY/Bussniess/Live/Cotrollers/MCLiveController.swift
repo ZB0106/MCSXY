@@ -15,7 +15,7 @@ import UIKit
     var line :UIView?
     var will :MCWillLiveViewController?
     var pre :MCPreLiveViewController?
-    var current :MCTableViewController?
+   weak var current :MCTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +23,20 @@ import UIKit
         
         
         contentView = UIView.init()
-        contentView?.backgroundColor = Color_Red
+        contentView?.backgroundColor = Color_White
         self.view.addSubview(contentView!)
         
         line = UIView.init()
         line?.backgroundColor = Color_Line
         self.view.addSubview(line!)
         
-        
+//        let auresizing =  UIViewAutoresizing(rawValue: UIViewAutoresizing.flexibleBottomMargin.rawValue | UIViewAutoresizing.flexibleTopMargin.rawValue | UIViewAutoresizing.flexibleLeftMargin.rawValue | UIViewAutoresizing.flexibleRightMargin.rawValue)
         pre = MCPreLiveViewController()
         will = MCWillLiveViewController()
         
         self .addChildViewController(pre!)
         self .addChildViewController(will!)
+        
         
         contentView?.addSubview(will!.view)
         current = will
@@ -47,6 +48,11 @@ import UIKit
         self.view.addSubview(pickView!)
 
         self .makeConstraintsForUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,7 +87,7 @@ extension MCLiveController{
             make.right.equalTo(0)
             make.left.equalTo(0)
             make.top.equalTo(0)
-            make.height.equalTo(0)
+            make.bottom.equalTo(0)
         })
     }
 }
@@ -93,20 +99,19 @@ extension MCLiveController{
         var toVc :MCTableViewController?
         var subType :String?
         if btn.tag == 1000 {
-            toVc = self.pre
+            toVc = pre
             subType = "fromLeft"
         } else {
-            toVc = self.will
+            toVc = will
             subType = "fromRight"
         }
         if self.current == toVc {
             return
         }
-        let old = self.current
-        toVc?.view.frame = (self.contentView?.bounds)!
-        
-        print(toVc?.view.frame as Any,self.current)
-        self.transition(from: self.current!, to: toVc!, duration: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+        let old = current
+
+        print(toVc?.view.frame as Any,self.current as Any)
+        self.transition(from: current!, to: toVc!, duration: 0.3, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             () in
             let tra = CATransition.init()
             tra.type = "reveal"
@@ -116,10 +121,19 @@ extension MCLiveController{
         }) { (finished) in
             if finished {
                 self.current = toVc
+                //每次执行完重新布局
+                toVc?.view.snp.remakeConstraints({ (make) in
+                    make.right.equalTo(0)
+                    make.left.equalTo(0)
+                    make.top.equalTo(0)
+                    make.bottom.equalTo(0)
+                })
+                
             } else {
                 self.current = old
             }
         }
+        print(toVc?.view.frame as Any,self.current as Any)
     }
 }
 

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ZB_BaseTableView: UITableView {
-    var _dataArray :Array<Any>?
-    var dataArray : Array<Any>?{
+    var _dataArray :Array<JSON>?
+    var dataArray : Array<JSON>?{
         set{
             _dataArray = newValue
             self .reloadData()
@@ -29,13 +30,16 @@ class ZB_BaseTableView: UITableView {
         if let tableViewInfosType = NSClassFromString(infoClass) as? MCBaseTableViewInfos.Type {
             
             self.tableViewInfos = tableViewInfosType.init()
-            if ((self.tableViewInfos?.infos?.count) != 0) {
+            if ((self.tableViewInfos?.infos.count) != 0) {
                 for tableViewInfo in (self.tableViewInfos?.infos)! {
-                    if (tableViewInfo.cellClass != nil) {
+                    if ((tableViewInfo.cellClass?.characters.count)! > 0) {
                         self .register(NSClassFromString(tableViewInfo.cellClass!), forCellReuseIdentifier: tableViewInfo.cellClass!)
                     }
-                    if (tableViewInfo.groupClass != nil) {
-                        self.register(NSClassFromString(tableViewInfo.groupClass!), forHeaderFooterViewReuseIdentifier: tableViewInfo.groupClass!)
+                    if (tableViewInfo.headerClass != nil) {
+                        self.register(NSClassFromString(tableViewInfo.headerClass!), forHeaderFooterViewReuseIdentifier: tableViewInfo.headerClass!)
+                    }
+                    if (tableViewInfo.footerClass != nil) {
+                        self.register(NSClassFromString(tableViewInfo.footerClass!), forHeaderFooterViewReuseIdentifier: tableViewInfo.footerClass!)
                     }
                     
                 }
@@ -54,37 +58,92 @@ class ZB_BaseTableView: UITableView {
 extension ZB_BaseTableView:UITableViewDelegate,UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
+        return self.dataArray?.count ?? 0;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArray?.count ?? 0
+        let json = self.dataArray?[section][cellDataArray].arrayValue
+        return json!.count 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableInfo = self.tableViewInfos?.infos?.last
-        let cell = tableView .dequeueReusableCell(withIdentifier: (tableInfo?.cellClass)!) as? MCTableViewCell
-        cell?.ZB_ConfigurationWithData(ZB_Data: nil)
+        
+        var cell :MCTableViewCell?
+        if let tableViewInfos = self.tableViewInfos {
+             let json = self.dataArray?[indexPath.section][cellDataArray]
+            let dictJson = json?[indexPath.row]
+            switch tableViewInfos.tableViewStyle {
+            case .plain:
+                let tableInfo = tableViewInfos.infos.first
+                cell = tableView .dequeueReusableCell(withIdentifier: (tableInfo?.cellClass)!) as? MCTableViewCell
+                cell?.ZB_ConfigurationWithData(jsonData: dictJson)
+            case .group:
+                let tableInfo = tableViewInfos.infos[indexPath.section]
+                cell = tableView .dequeueReusableCell(withIdentifier: (tableInfo.cellClass)!) as? MCTableViewCell
+                cell?.ZB_ConfigurationWithData(jsonData: dictJson)
+            }
+
+        } else {
+            cell = MCTableViewCell()
+        }
         return cell!
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44.0
+        let json = self.dataArray?[indexPath.section][cellDataArray]
+        let dictJson = json?[indexPath.row]
+        return CGFloat(dictJson![cellHeight].floatValue)
     }
     
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return nil
+        if let tableViewInfos = self.tableViewInfos {
+            switch tableViewInfos.tableViewStyle {
+            case .plain:
+                let tableInfo = tableViewInfos.infos.first
+                if let headerClass = tableInfo?.headerClass {
+                    let headerFooter = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerClass)
+                    return headerFooter
+                } else {
+                    return nil
+                }
+            case .group:
+                let tableInfo = tableViewInfos.infos[section]
+                let headerFooter = tableView.dequeueReusableHeaderFooterView(withIdentifier: tableInfo.headerClass!)
+                return headerFooter
+            }
+        } else {
+            return nil
+        }
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.1
+        let json = self.dataArray?[section]
+        return CGFloat(json![headerHeight].floatValue)
     }
 
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return nil
+        if let tableViewInfos = self.tableViewInfos {
+            switch tableViewInfos.tableViewStyle {
+            case .plain:
+                let tableInfo = tableViewInfos.infos.first
+                if let footerClass = tableInfo?.footerClass {
+                    let headerFooter = tableView.dequeueReusableHeaderFooterView(withIdentifier: footerClass)
+                    return headerFooter
+                } else {
+                    return nil
+                }
+            case .group:
+                let tableInfo = tableViewInfos.infos[section]
+                let headerFooter = tableView.dequeueReusableHeaderFooterView(withIdentifier: tableInfo.footerClass!)
+                return headerFooter
+            }
+        } else {
+            return nil
+        }
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.1
+        let json = self.dataArray?[section]
+        return CGFloat(json![footerHeight].floatValue)
     }
 }

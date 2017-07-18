@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2100A5A01F1D9C7100AA9466 /* MCVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100A59F1F1D9C7100AA9466 /* MCVideoCell.swift */; };
+		2100A5A21F1DCCCB00AA9466 /* RHImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100A5A11F1DCCCB00AA9466 /* RHImageView.swift */; };
+		2100A5A41F1DCCE600AA9466 /* RHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100A5A31F1DCCE600AA9466 /* RHLabel.swift */; };
 		211415CF1F1702EC00836C71 /* MCMVVMInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211415CE1F1702EC00836C71 /* MCMVVMInfos.swift */; };
 		211415D11F170B9B00836C71 /* ZB_DataTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211415D01F170B9B00836C71 /* ZB_DataTableViewModel.swift */; };
 		211415D31F17138800836C71 /* ZB_TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211415D21F17138800836C71 /* ZB_TableViewModel.swift */; };
@@ -48,7 +51,6 @@
 		215FFB901F1CAE5B00158410 /* MCLivePreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB8F1F1CAE5B00158410 /* MCLivePreViewModel.swift */; };
 		215FFB921F1CAE7200158410 /* MCLivePreViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB911F1CAE7200158410 /* MCLivePreViewManager.swift */; };
 		215FFB941F1CAE9900158410 /* MCLivePreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215FFB931F1CAE9900158410 /* MCLivePreDataViewModel.swift */; };
-		217778CC1F186FEF00E8F629 /* MCBaseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */; };
 		217778CE1F18701400E8F629 /* MCTableViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778CD1F18701400E8F629 /* MCTableViewInfo.swift */; };
 		217778D21F18D3BE00E8F629 /* MCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217778D11F18D3BE00E8F629 /* MCUser.swift */; };
 		21814FBB1EF3CCD500681F73 /* MCSXYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21814FBA1EF3CCD500681F73 /* MCSXYTests.swift */; };
@@ -94,6 +96,9 @@
 
 /* Begin PBXFileReference section */
 		03D450F5DFF30BA99C7309B8 /* Pods_MCSXY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCSXY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2100A59F1F1D9C7100AA9466 /* MCVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCVideoCell.swift; sourceTree = "<group>"; };
+		2100A5A11F1DCCCB00AA9466 /* RHImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHImageView.swift; sourceTree = "<group>"; };
+		2100A5A31F1DCCE600AA9466 /* RHLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHLabel.swift; sourceTree = "<group>"; };
 		211415CE1F1702EC00836C71 /* MCMVVMInfos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMVVMInfos.swift; sourceTree = "<group>"; };
 		211415D01F170B9B00836C71 /* ZB_DataTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_DataTableViewModel.swift; sourceTree = "<group>"; };
 		211415D21F17138800836C71 /* ZB_TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZB_TableViewModel.swift; sourceTree = "<group>"; };
@@ -136,7 +141,6 @@
 		215FFB8F1F1CAE5B00158410 /* MCLivePreViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLivePreViewModel.swift; sourceTree = "<group>"; };
 		215FFB911F1CAE7200158410 /* MCLivePreViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLivePreViewManager.swift; sourceTree = "<group>"; };
 		215FFB931F1CAE9900158410 /* MCLivePreDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLivePreDataViewModel.swift; sourceTree = "<group>"; };
-		217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCBaseListModel.swift; sourceTree = "<group>"; };
 		217778CD1F18701400E8F629 /* MCTableViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTableViewInfo.swift; sourceTree = "<group>"; };
 		217778D11F18D3BE00E8F629 /* MCUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCUser.swift; sourceTree = "<group>"; };
 		21814FA21EF3CCD400681F73 /* MCSXY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCSXY.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,7 +240,6 @@
 		214FB52D1F15CC9000FEC84F /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				217778CB1F186FEF00E8F629 /* MCBaseListModel.swift */,
 				214FB52F1F15CC9000FEC84F /* ZB_ViewModel.swift */,
 				214FB5301F15CC9000FEC84F /* ZB_CommonModels.swift */,
 				214FB5311F15CC9000FEC84F /* ZB_EventManagerModel.swift */,
@@ -276,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				215FFB8D1F1C8DBF00158410 /* RHButton.swift */,
+				2100A5A11F1DCCCB00AA9466 /* RHImageView.swift */,
+				2100A5A31F1DCCE600AA9466 /* RHLabel.swift */,
 			);
 			path = RHFactory;
 			sourceTree = "<group>";
@@ -1142,6 +1147,7 @@
 		218150361EF3D97900681F73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2100A59F1F1D9C7100AA9466 /* MCVideoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1467,6 +1473,7 @@
 				2118BD951F16177300ADEF04 /* ZB_NetWorkModel.swift in Sources */,
 				214FB54E1F15CC9000FEC84F /* ZB_CollectionCell.swift in Sources */,
 				214FB5251F15CC7A00FEC84F /* MCGuideController.swift in Sources */,
+				2100A5A21F1DCCCB00AA9466 /* RHImageView.swift in Sources */,
 				215FFB921F1CAE7200158410 /* MCLivePreViewManager.swift in Sources */,
 				214FB5501F15CC9000FEC84F /* ZB_View.swift in Sources */,
 				3B673E601F13CC3400171BE2 /* NSObject + ZB_ClassName.swift in Sources */,
@@ -1483,12 +1490,13 @@
 				213DE8841EFBB88500D49B3C /* MCRequestTool.swift in Sources */,
 				215FFB901F1CAE5B00158410 /* MCLivePreViewModel.swift in Sources */,
 				217778CE1F18701400E8F629 /* MCTableViewInfo.swift in Sources */,
-				217778CC1F186FEF00E8F629 /* MCBaseListModel.swift in Sources */,
 				215FFB8B1F1C83C600158410 /* MCLivePickView.swift in Sources */,
 				219F19751EF7AC52008D013B /* MCLiveController.swift in Sources */,
 				2130C09C1EFA399A00492DD8 /* RHUserDefaults.swift in Sources */,
+				2100A5A41F1DCCE600AA9466 /* RHLabel.swift in Sources */,
 				214FB5411F15CC9000FEC84F /* MCTabBarController.swift in Sources */,
 				218150401EF3D97900681F73 /* AppDelegate.swift in Sources */,
+				2100A5A01F1D9C7100AA9466 /* MCVideoCell.swift in Sources */,
 				219F19731EF7A88F008D013B /* MCLoginController.swift in Sources */,
 				214FB53F1F15CC9000FEC84F /* MCListController.swift in Sources */,
 				21A13ED31F13271400138B98 /* UIView + ZB_Categery.swift in Sources */,
@@ -1631,6 +1639,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9452ECED1E3A8E58C8511C76 /* Pods-MCSXY.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2TMR7TYGS8;
@@ -1644,6 +1653,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MCSXY/Header-Swift-OC.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -1651,6 +1661,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 751458C88F9ABDD171C595ED /* Pods-MCSXY.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2TMR7TYGS8;
@@ -1664,6 +1675,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MCSXY/Header-Swift-OC.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
