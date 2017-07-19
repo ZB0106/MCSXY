@@ -70,16 +70,16 @@ extension MCLiveController{
             make.top.equalTo(0)
             make.height.equalTo(44)
         })
-        line?.snp.makeConstraints({ (make) in
+        line?.snp.makeConstraints({[weak self] (make) in
             make.right.equalTo(0)
             make.left.equalTo(0)
-            make.top.equalTo((pickView?.snp.bottom)!).offset(0)
+            make.top.equalTo((self?.pickView?.snp.bottom)!).offset(0)
             make.height.equalTo(0.5)
         })
-        contentView?.snp .makeConstraints({ (make) in
+        contentView?.snp .makeConstraints({[weak self] (make) in
             make.right.equalTo(0)
             make.left.equalTo(0)
-            make.top.equalTo((line?.snp.bottom)!).offset(0)
+            make.top.equalTo((self?.line?.snp.bottom)!).offset(0)
             make.bottom.equalTo(0)
 
         })
@@ -118,9 +118,9 @@ extension MCLiveController{
             tra.subtype = subType
             tra.duration = 0.3
             self.contentView?.layer .add(tra, forKey: "KCTransitionAnimation")
-        }) { (finished) in
+        }) { [weak self](finished) in
             if finished {
-                self.current = toVc
+                self?.current = toVc
                 //每次执行完重新布局
                 toVc?.view.snp.remakeConstraints({ (make) in
                     make.right.equalTo(0)
@@ -130,10 +130,9 @@ extension MCLiveController{
                 })
                 
             } else {
-                self.current = old
+                self?.current = old
             }
         }
-        print(toVc?.view.frame as Any,self.current as Any)
     }
 }
 

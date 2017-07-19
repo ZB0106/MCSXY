@@ -50,32 +50,32 @@ extension MCLiveCell{
             make.top.equalTo(15)
         })
         
-        image_priceType?.snp.makeConstraints({ (make) in
+        image_priceType?.snp.makeConstraints({ make in
             make.size.equalTo(CGSize.init(width: 30, height: 30))
             make.left.equalTo(0)
             make.top.equalTo(0)
         })
-        lab_title?.snp.makeConstraints({ (make) in
-            make.top.equalTo((image_icon?.snp.top)!)
-            make.left.equalTo((image_icon?.snp.right)!).offset(10)
+        lab_title?.snp.makeConstraints({ [weak self] (make) in
+            make.top.equalTo((self?.image_icon?.snp.top)!)
+            make.left.equalTo((self?.image_icon?.snp.right)!).offset(10)
             make.height.equalTo(40)
             make.right.equalTo(-15)
         })
-        lab_learnCount?.snp.makeConstraints({ (make) in
+        lab_learnCount?.snp.makeConstraints({ [weak self](make) in
             make.size.equalTo(CGSize.init(width: 75, height: 20))
-            make.bottom.equalTo((image_icon?.snp.bottom)!)
+            make.bottom.equalTo((self?.image_icon?.snp.bottom)!)
             make.right.equalTo(-15)
         })
-        lab_teacher?.snp.makeConstraints({ (make) in
+        lab_teacher?.snp.makeConstraints({[weak self] (make) in
             make.height.equalTo(20);
-            make.bottom.equalTo((image_icon?.snp.bottom)!);
-            make.left.equalTo((lab_title?.snp.left)!);
-            make.right.equalTo((lab_learnCount?.snp.left)!).offset(-5);
+            make.bottom.equalTo((self?.image_icon?.snp.bottom)!);
+            make.left.equalTo((self?.lab_title?.snp.left)!);
+            make.right.equalTo((self?.lab_learnCount?.snp.left)!).offset(-5);
         })
-        lab_learnTime?.snp.makeConstraints({ (make) in
+        lab_learnTime?.snp.makeConstraints({[weak self] (make) in
             make.height.equalTo(20);
-            make.bottom.equalTo((lab_teacher?.snp.top)!);
-            make.left.equalTo((lab_title?.snp.left)!);
+            make.bottom.equalTo((self?.lab_teacher?.snp.top)!);
+            make.left.equalTo((self?.lab_title?.snp.left)!);
             make.right.equalTo(-15);
 
         })
